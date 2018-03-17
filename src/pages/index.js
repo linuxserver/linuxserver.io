@@ -28,7 +28,7 @@ const IndexPage = () => (
             <Row>
                 <Col lg="12">
                     <h3>Who are we?</h3>
-                    <p>We are a group of home server enthusiasts that wish to give back to the community. </p>
+                    <p>We are a group of home server enthusiasts that wish to give back to the community. Our primary goal is to provide functional, easy-to-use and streamlined Docker images. </p>
                 </Col>
             </Row>
         </Container>
@@ -37,7 +37,7 @@ const IndexPage = () => (
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Standardised Images</h3>
                     <span className="uspIcon"><FontAwesomeIcon icon={DockerIcon} style={{color: '#009bff'}} /></span>
-                    <p>All of our images are built from the same base, which we have uniquely curated. By using <span className="monospace">s6-overlay</span>, each of our base images are highly extendable, making them configurable for practically any application.</p>
+                    <p>All of our images are built from the same base, which we have uniquely curated. By using <code>s6-overlay</code>, each of our base images are highly extendable, making them configurable for practically any application.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Weekly Updates</h3>

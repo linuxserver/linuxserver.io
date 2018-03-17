@@ -1,11 +1,24 @@
 .main-nav {
     background-color: #282c34;
     font-weight: 300;
-    padding: 12px 0 !important;
+    padding: 0 !important;
 }
 
 .main-nav a {
     color: #fff;
+    padding: 18px 0 !important;
+}
+
+.main-nav .nav-item {
+    padding: 0 20px;
+}
+
+.main-nav .nav-item.active {
+    border-bottom: 3px solid orange;
+}
+
+.main-nav .nav-item.active a {
+    color: orange;
 }
 
 .main-nav a:hover {
@@ -13,14 +26,9 @@
 }
 
 .main-nav .navbar-brand {
-    color: orange;
     font-weight: 500;
     font-size: 1.2rem;
     margin-left: 10px;
-}
-
-.main-nav .nav-item {
-    margin-left: 50px;
 }
 
 .page-footer {
@@ -182,5 +190,9 @@ span.monospace {
 }
 
 .documentation .contents {
+    padding-top: 50px;
+}
 
+.documentation .contents ul {
+    list-style-type: none;
 }
