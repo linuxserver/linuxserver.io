@@ -20,6 +20,6 @@ Or, if you use `docker-compose`, add them to the `environment:` section:
 
 ```yaml
 environment:
-  PUID: "1000"
-  PGID: "1000"
+  PUID: 1000
+  PGID: 1000
 ```

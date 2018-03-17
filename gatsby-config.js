@@ -6,7 +6,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/src/content/docs`,
+                path: `${__dirname}/content/docs`,
                 name: "markdown-pages-docs"
             }
         }, {
@@ -19,7 +19,8 @@ module.exports = {
                             classPrefix: "language-",
                             inlineCodeMarker: null
                         }
-                    }
+                    },
+                    'gatsby-remark-autolink-headers'
                 ]
             }
         },

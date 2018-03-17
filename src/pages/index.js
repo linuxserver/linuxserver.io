@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import DockerIcon from '@fortawesome/fontawesome-free-brands/faDocker'
-import ClockIcon from '@fortawesome/fontawesome-free-regular/faClock'
+import JenkinsIcon from '@fortawesome/fontawesome-free-brands/faJenkins'
 import DiscordIcon from '@fortawesome/fontawesome-free-brands/faDiscord'
 
 import DockerPullStats from '../components/DockerPullStats'
@@ -24,6 +24,14 @@ const IndexPage = () => (
                 </Row>
             </Container>
         </div>
+        <Container className="whoAreWe">
+            <Row>
+                <Col lg="12">
+                    <h3>Who are we?</h3>
+                    <p>We are a group of home server enthusiasts that wish to give back to the community. </p>
+                </Col>
+            </Row>
+        </Container>
         <Container className="usps">
             <Row>
                 <Col className="col" xs="12" sm="12" md="4">
@@ -33,8 +41,8 @@ const IndexPage = () => (
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Weekly Updates</h3>
-                    <span className="uspIcon"><FontAwesomeIcon icon={ClockIcon} style={{color: 'orange'}}/></span>
-                    <p>Using a build pipeline, all of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date.</p>
+                    <span className="uspIcon"><FontAwesomeIcon icon={JenkinsIcon} /></span>
+                    <p>Using Jenkins as our build pipeline, all of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Container Support</h3>

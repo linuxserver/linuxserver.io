@@ -23,6 +23,15 @@
     margin-left: 50px;
 }
 
+.page-footer {
+    color: #fff;
+    background-color: #282c34;
+}
+
+.footer-copyright {
+    background-color: #161719
+}
+
 .splashParent {
     background-color: #282c34;
     /* background-image: url(./johannes-plenio-377226.jpg); */
@@ -44,7 +53,7 @@
     font-weight: 100
 }
 
-.usps {
+.usps, .whoAreWe {
     margin-top: 50px;
     text-align: center;
 }
@@ -65,8 +74,8 @@ span.monospace {
     font-family: monospace;
 }
 
-.totalPulls, .showcase {
-    border-top: 1px solid #eaeaea;
+.totalPulls, .showcase, .usps {
+    border-top: 1px solid #efefef;
     padding: 50px 0;
     text-align: center;
 }
@@ -120,11 +129,11 @@ span.monospace {
     font-size: 1.2rem;
 }
 
-.documentation .document {
+.documentation .article {
     padding-right: 20px;
 }
 
-.documentation .document .preface {
+.documentation .article .preface {
     margin-top: 50px;
     font-weight: 100;
     font-size: 1.5rem;
@@ -132,27 +141,44 @@ span.monospace {
     color: #666;
 }
 
-.documentation .document > div > p {
-    line-height: 25px;
+.documentation .article > div > p {
+    line-height: 1.7rem;
 }
 
-.documentation .document > div > p > code {
+.documentation .article > div > p > code {
     background-color: rgba(232, 62, 140, 0.1);
     padding: 4px;
     border-radius: 2px;
 }
 
-.documentation .document > div > pre {
+.documentation .article div.gatsby-highlight pre {
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-.documentation .document > ul > li {
+.documentation .article code[class*="language-"], .documentation .article pre[class*="language-"] {
+    background-color: #2c2c38
+}
+
+.documentation .article > ul > li {
     margin-bottom: 10px;
 }
 
-.documentation .document ul li p {
+.documentation .article ul li p {
     margin-bottom: 0;
+}
+
+.documentation .article p a {
+    color: rgb(33, 37, 41);
+    background-color: rgba(255, 141, 0, 0.1);
+    padding: 3px;
+    border-bottom: 1px solid rgba(33, 37, 41, 0.4);
+}
+
+.documentation .article p a:hover {
+    background-color: rgba(255, 141, 0, 0.5);
+    border-bottom: 1px solid rgba(33, 37, 41, 0.8);
+    text-decoration: none;
 }
 
 .documentation .contents {

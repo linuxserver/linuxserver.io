@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container, Row, Col } from 'reactstrap';
+import { sectionListDocs } from '../utils/sectionList';
 
 export default function DocTemplate({ data }) {
 
@@ -11,11 +12,11 @@ export default function DocTemplate({ data }) {
 
         <Container className="documentation">
             <Row>
-                <Col md="8" className="document">
+                <Col md="4" className="contents"></Col>
+                <Col md="8" className="article">
                     <h1>{frontmatter.title}</h1>
                     <div dangerouslySetInnerHTML={{ __html: html }}/>
                 </Col>
-                <Col md="4" className="contents"></Col>
             </Row>
         </Container>
     );
