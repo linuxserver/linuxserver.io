@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "linuxserver-website",
+  "description": "Splash site and documentation for LinuxServer",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "The LinuxServer Team",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",
     "@fortawesome/fontawesome-free-brands": "^5.0.8",
@@ -13,6 +13,9 @@
     "gatsby": "^1.9.235",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-remark-prismjs": "^1.2.18",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-remark": "^1.7.37",
     "react-helmet": "^5.2.0",
     "react-popper": "^0.8.2",
     "reactstrap": "^5.0.0-beta"

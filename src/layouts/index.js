@@ -4,10 +4,14 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 
+
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
-const TemplateWrapper = ({children}) => (
+import 'prismjs'
+import 'prismjs/themes/prism-okaidia.css';
+
+const TemplateWrapper = ({ children }) => (
     <div>
         <Helmet title="LinuxServer" meta={
             [

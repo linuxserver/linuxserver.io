@@ -1,6 +1,7 @@
 .main-nav {
     background-color: #282c34;
     font-weight: 300;
+    padding: 12px 0 !important;
 }
 
 .main-nav a {
@@ -8,13 +9,14 @@
 }
 
 .main-nav a:hover {
-    color: #fff;
+    color: orange;
 }
 
 .main-nav .navbar-brand {
     color: orange;
     font-weight: 500;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 .main-nav .nav-item {
@@ -23,12 +25,13 @@
 
 .splashParent {
     background-color: #282c34;
+    /* background-image: url(./johannes-plenio-377226.jpg); */
 }
 
 .splash {
     text-align: center;
     color: #fff;
-    padding: 120px 0;
+    padding: 180px 0;
 }
 
 .splash h1 {
@@ -62,7 +65,7 @@ span.monospace {
     font-family: monospace;
 }
 
-.totalPulls {
+.totalPulls, .showcase {
     border-top: 1px solid #eaeaea;
     padding: 50px 0;
     text-align: center;
@@ -80,4 +83,78 @@ span.monospace {
     padding: 10px 20px;
     margin: 2px;
     border-radius: 5px;
+}
+
+.showcaseImage {
+    border-radius: 5px;
+}
+
+.alignMiddle {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.documentation {
+}
+
+.documentation h1 {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.documentation h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.documentation h3 {
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.documentation h4 {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.documentation .document {
+    padding-right: 20px;
+}
+
+.documentation .document .preface {
+    margin-top: 50px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 35px;
+    color: #666;
+}
+
+.documentation .document > div > p {
+    line-height: 25px;
+}
+
+.documentation .document > div > p > code {
+    background-color: rgba(232, 62, 140, 0.1);
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.documentation .document > div > pre {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.documentation .document > ul > li {
+    margin-bottom: 10px;
+}
+
+.documentation .document ul li p {
+    margin-bottom: 0;
+}
+
+.documentation .contents {
+
 }

@@ -10,6 +10,8 @@ import DiscordIcon from '@fortawesome/fontawesome-free-brands/faDiscord'
 
 import DockerPullStats from '../components/DockerPullStats'
 
+import DiscordScreenshot from '../images/Discord_2018-03-17_13-40-59.png';
+
 const IndexPage = () => (
     <div>
         <div className="splashParent">
@@ -31,7 +33,7 @@ const IndexPage = () => (
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Weekly Updates</h3>
-                    <span className="uspIcon"><FontAwesomeIcon icon={ClockIcon} /></span>
+                    <span className="uspIcon"><FontAwesomeIcon icon={ClockIcon} style={{color: 'orange'}}/></span>
                     <p>Using a build pipeline, all of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
@@ -43,6 +45,21 @@ const IndexPage = () => (
         </Container>
         <Container className="totalPulls">
             <DockerPullStats />
+        </Container>
+        <Container className="showcase">
+            <Row>
+                <Col className="col" xs="12" sm="12" md="6" style={{display: 'flex'}}>
+                    <div className="alignMiddle">
+                        <h3>Join the conversation!</h3>
+                        <p>
+                            We actively talk to our users and offer guidance and help to all that ask for it. Have a problem with Docker? Found a bug in one of our containers? Or just want to say "hi"? You are welcome to join our server and be part of the ever expanding conversation.
+                        </p>
+                    </div>
+                </Col>
+                <Col className="col" xs="12" sm="12" md="6">
+                    <img src={DiscordScreenshot} alt="Discord" className="showcaseImage" />
+                </Col>
+            </Row>
         </Container>
     </div>
 )
