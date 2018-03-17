@@ -1,0 +1,83 @@
+.main-nav {
+    background-color: #282c34;
+    font-weight: 300;
+}
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+.main-nav .navbar-brand {
+    color: orange;
+    font-weight: 500;
+    font-size: 1.2rem
+}
+
+.main-nav .nav-item {
+    margin-left: 50px;
+}
+
+.splashParent {
+    background-color: #282c34;
+}
+
+.splash {
+    text-align: center;
+    color: #fff;
+    padding: 120px 0;
+}
+
+.splash h1 {
+    color: orange;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.splash h2 {
+    font-weight: 100
+}
+
+.usps {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container h3 {
+    font-weight: 100;
+}
+
+.usps .uspIcon {
+    font-size: 5rem;
+}
+
+.usps .col {
+    margin-bottom: 50px;
+}
+
+span.monospace {
+    font-family: monospace;
+}
+
+.totalPulls {
+    border-top: 1px solid #eaeaea;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.totalPulls .pullStatNumbers {
+    margin: 20px 0;
+}
+
+.totalPulls .pullStatNumbers .pullStatNumber {
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    background-color: #20232a;
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 5px;
+}

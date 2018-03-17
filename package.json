@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@fortawesome/fontawesome-free-regular": "^5.0.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/react-fontawesome": "0.0.17",
+    "bootstrap": "^4.0.0",
+    "gatsby": "^1.9.235",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "react-helmet": "^5.2.0",
+    "react-popper": "^0.8.2",
+    "reactstrap": "^5.0.0-beta"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  }
+}
