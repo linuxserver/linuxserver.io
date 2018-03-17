@@ -4,10 +4,6 @@ import Link from 'gatsby-link'
 import { Container, Row, Col } from 'reactstrap';
 import { sectionListDocs } from '../utils/sectionList';
 
-function getLink(directory, id) {
-    return `${directory}/${id}`;
-}
-
 export default function DocTemplate({ data }) {
 
     const { markdownRemark } = data;
@@ -28,7 +24,9 @@ export default function DocTemplate({ data }) {
                                     <ul>
                                         {
                                             section.items.map((item, itemIndex) => (
-                                                <li key={itemIndex}><Link to={getLink(section.directory, item.id)}>{item.title}</Link></li>
+                                                <li key={itemIndex}>
+                                                    <Link to={item.id}>{item.title}</Link>
+                                                </li>
                                             ))
                                         }
                                     </ul>
