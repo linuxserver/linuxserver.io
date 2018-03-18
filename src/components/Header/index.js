@@ -56,7 +56,7 @@ export default class Header extends React.Component {
                                     <NavLink href="https://github.com/linuxserver"><FontAwesomeIcon icon={GitHubIcon} /> Github</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/Donate"><FontAwesomeIcon icon={PayPalIcon} /> Donate</NavLink>
+                                    <Link to="/donate" className="nav-link" activeClassName="active"><FontAwesomeIcon icon={PayPalIcon} /> Donate</Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>

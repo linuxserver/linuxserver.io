@@ -7,10 +7,15 @@ import TitleAndMetaTags from '../components/TitleAndMetaTags'
 const ImagesPage = () => (
     <div>
         <TitleAndMetaTags title="Images built by us - LinuxServer" />
-        <Container className="not-found">
+        <Container className="our-images">
             <Row>
                 <Col>
-                    <h3>Images built by us</h3>
+                    <h1>Images built by us</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <p>Coming Soon!</p>
                 </Col>
             </Row>
         </Container>
