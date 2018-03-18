@@ -13,17 +13,6 @@ import 'prismjs/themes/prism-okaidia.css';
 
 const TemplateWrapper = ({ children }) => (
     <div>
-        <Helmet title="LinuxServer" meta={
-            [
-                {
-                    name: 'description',
-                    content: 'Community-based Docker images'
-                }, {
-                    name: 'keywords',
-                    content: 'linux,server,docker,guides,foss,oss,open source'
-                }
-            ]
-        }/>
         <Header/>
         <div>
 

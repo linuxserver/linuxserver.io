@@ -8,11 +8,14 @@ import DockerIcon from '@fortawesome/fontawesome-free-brands/faDocker'
 import JenkinsIcon from '@fortawesome/fontawesome-free-brands/faJenkins'
 import DiscordIcon from '@fortawesome/fontawesome-free-brands/faDiscord'
 
+import TitleAndMetaTags from '../components/TitleAndMetaTags'
+
 import DockerPullStats from '../components/DockerPullStats'
 import DiscordScreenshot from '../images/Discord_2018-03-17_13-40-59.png';
 
 const IndexPage = () => (
     <div>
+        <TitleAndMetaTags title="LinuxServer" />
         <div className="splash-parent">
             <Container className="splash">
                 <Row>
