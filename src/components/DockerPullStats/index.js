@@ -17,17 +17,17 @@ export default class DockerPullStats extends React.Component {
                         <h3>Let the numbers speak for themselves</h3>
                     </Col>
                 </Row>
-                <Row className="pullStatNumbers">
+                <Row className="pull-stat-numbers">
                     <Col>
-                        <div className="pullStatNumber">3</div>
-                        <div className="pullStatNumber">5</div>
-                        <div className="pullStatNumber">5</div>
-                        <div className="pullStatNumber">8</div>
-                        <div className="pullStatNumber">4</div>
-                        <div className="pullStatNumber">3</div>
-                        <div className="pullStatNumber">2</div>
-                        <div className="pullStatNumber">5</div>
-                        <div className="pullStatNumber">0</div>
+                        <div className="pull-stat-number">3</div>
+                        <div className="pull-stat-number">5</div>
+                        <div className="pull-stat-number">5</div>
+                        <div className="pull-stat-number">8</div>
+                        <div className="pull-stat-number">4</div>
+                        <div className="pull-stat-number">3</div>
+                        <div className="pull-stat-number">2</div>
+                        <div className="pull-stat-number">5</div>
+                        <div className="pull-stat-number">0</div>
                     </Col>
                 </Row>
                 <Row>

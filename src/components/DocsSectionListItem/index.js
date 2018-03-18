@@ -29,7 +29,7 @@ export default class DocsSectionListItem extends React.Component {
 
         return (
             <div>
-                <span onClick={this.toggle} className={ this.state.isOpen ? 'documentSection' : 'closed documentSection'}>
+                <span onClick={this.toggle} className={ this.state.isOpen ? 'document-section' : 'closed document-section'}>
                     {this.props.section.title} <FontAwesomeIcon icon={ this.state.isOpen ? AngleUpIcon : AngleDownIcon } style={ { paddingTop: '4px' } } />
                 </span>
                 <ul>

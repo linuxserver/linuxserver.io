@@ -6,7 +6,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import ExclamationIcon from '@fortawesome/fontawesome-free-solid/faExclamationCircle'
 
 const NotFoundPage = () => (
-    <Container className="notFound">
+    <Container className="not-found">
         <Row>
             <Col>
                 <h3>Not Found</h3>

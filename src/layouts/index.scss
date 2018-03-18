@@ -1,33 +1,39 @@
 $color-primary: rgba(255, 165, 0, 1);
-$color-primary-faint: rgba(255, 165, 0, 0.5);
+$color-primary-faint: rgba(255, 165, 0, .5);
 $color-splash: #282c34;
 $color-font: #212529;
+$color-dark: #333;
+$color-darkish: #666;
+$color-light: #efefef;
+$color-white: #fff;
+$color-footer: #161719;
+$color-chiclet: #20232a;
+$color-code-inline: rgba(232, 62, 140, .1);
+$color-code-block: #2c2c38;
+$color-article-link-background: rgba(255, 141, 0, .1);
+$color-article-link-border: rgba(33, 37, 41, .4);
 
 .main-nav {
-
     background-color: $color-splash;
     font-weight: 300;
-    padding: 0 !important;
+    padding: 0 !important; // sass-lint:disable-line no-important
 
     a {
-        color: #fff;
-        padding: 18px 20px !important;
+        color: $color-white;
+        padding: 18px 20px !important; // sass-lint:disable-line no-important
     }
 
     .navbar-toggler {
-        color: #fff;
+        color: $color-white;
         z-index: 100;
     }
 
     .nav-item {
-
         a {
-
             &.active {
-
+                background-color: $color-dark;
                 border-bottom: 3px solid $color-primary;
                 color: $color-primary;
-                background-color: #333;
             }
 
             &:hover {
@@ -37,9 +43,8 @@ $color-font: #212529;
     }
 
     .navbar-brand {
-
-        font-weight: 500;
         font-size: 1.2rem;
+        font-weight: 500;
         margin-left: 10px;
 
         &:hover {
@@ -49,36 +54,32 @@ $color-font: #212529;
 }
 
 .page-footer {
-    color: #fff;
     background-color: $color-splash;
+    color: $color-white;
 }
 
 .footer-copyright {
-    background-color: #161719;
+    background-color: $color-footer;
 }
 
 .container {
-
     h3 {
         font-weight: 100;
     }
 }
 
-.notFound {
-
+.not-found {
     margin-top: 20px;
     text-align: center;
 }
 
-.splashParent {
-
+.splash-parent {
     background-color: $color-splash;
 
     .splash {
-
-        text-align: center;
-        color: #fff;
+        color: $color-white;
         padding: 180px 0;
+        text-align: center;
 
         h1 {
             color: $color-primary;
@@ -87,19 +88,18 @@ $color-font: #212529;
         }
 
         h2 {
-           font-weight: 100;
-       }
+            font-weight: 100;
+        }
     }
 }
 
 .usps {
-
+    border-top: 1px solid $color-light;
     margin-top: 50px;
-    text-align: center;
-    border-top: 1px solid #efefef;
     padding: 50px 0;
+    text-align: center;
 
-    .uspIcon {
+    .usp-icon {
         font-size: 5rem;
     }
 
@@ -108,152 +108,137 @@ $color-font: #212529;
     }
 }
 
-.whoAreWe {
-
+.who-are-we {
     margin-top: 50px;
     text-align: center;
 }
 
-.totalPulls, .showcase, .usps {
-    border-top: 1px solid #efefef;
+.showcase,
+.total-pulls,
+.usps {
+    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 }
 
-.totalPulls {
-
-    border-top: 1px solid #efefef;
+.total-pulls {
+    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 
-    .pullStatNumbers {
-
+    .pull-stat-numbers {
         margin: 20px 0;
 
-        .pullStatNumber {
-
-            display: inline-block;
-            color: #fff;
-            background-color: #20232a;
+        .pull-stat-number {
+            background-color: $color-chiclet;
             border-radius: 5px;
-
+            color: $color-white;
+            display: inline-block;
             font-size: 1rem;
-            padding: 10px 10px;
             margin: 1px;
-
+            padding: 10px;
             @media (min-width: 768px) {
-
                 font-size: 2rem;
+                margin: 2px;
                 padding: 10px 15px;
-                margin: 2px;
             }
-
             @media (min-width: 992px) {
-
                 font-size: 3rem;
-                padding: 10px 20px;
                 margin: 2px;
+                padding: 10px 20px;
             }
         }
     }
 }
 
 .showcase {
-
-    .showcaseImage {
+    .showcase-image {
         border-radius: 5px;
     }
 }
 
-.alignMiddle {
-    margin-top:auto;
-    margin-bottom:auto;
+.align-middle {
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .documentation {
-
     h1 {
-       margin-top: 50px;
-       font-size: 3rem;
-       font-weight: bold;
-   }
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 50px;
+    }
 
-   h2 {
-       margin-top: 50px;
-       margin-bottom: 20px;
-       font-weight: bold;
-       font-size: 1.5rem;
-   }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
 
-   h3 {
-       margin-top: 50px;
-       font-size: 1.3rem;
-   }
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
 
-   h4 {
-       margin-top: 50px;
-       font-size: 1.2rem;
-   }
+    h4 {
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
 
-   .article {
+    .article {
+        padding-left: 20px;
 
-       padding-left: 20px;
+        .preface {
+            color: $color-darkish;
+            font-size: 1.5rem;
+            font-weight: 100;
+            line-height: 35px;
+            margin-top: 50px;
+        }
 
-       .preface {
-           margin-top: 50px;
-           font-weight: 100;
-           font-size: 1.5rem;
-           line-height: 35px;
-           color: #666;
-       }
+        > div {
+            > p {
+                line-height: 1.7rem;
 
-       > div {
-
-           > p {
-               line-height: 1.7rem;
-
-               > code {
-
-                   background-color: rgba(232, 62, 140, 0.1);
-                   padding: 4px;
-                   border-radius: 2px;
-               }
-           }
-       }
+                > code {
+                    background-color: $color-code-inline;
+                    border-radius: 2px;
+                    padding: 4px;
+                }
+            }
+        }
 
         div {
-
             &.gatsby-highlight {
-
                 pre {
-
-                    margin: 30px 0;
                     border-radius: 10px;
+                    margin: 30px 0;
                     margin-left: -25px;
                     margin-right: -25px;
-                    padding-left:: 25px;
+                    padding-left: 25px;
                     padding-right: 25px;
                 }
             }
         }
 
-        code[class*="language-"],
-        pre[class*="language-"] {
-            background-color: #2c2c38;
+        code,
+        pre {
+
+            &[class*='language-'] {
+                background-color: $color-code-block;
+            }
         }
     }
 
     > ul {
-
         > li {
             margin-bottom: 10px;
         }
     }
 
     ul {
-
         li {
-
             p {
                 margin-bottom: 0;
             }
@@ -261,25 +246,21 @@ $color-font: #212529;
     }
 
     p {
-
         a {
-
-            color: rgb(33, 37, 41);
-            background-color: rgba(255, 141, 0, 0.1);
+            background-color: $color-article-link-background;
+            border-bottom: 1px solid $color-article-link-border;
+            color: $color-dark;
             padding: 3px;
-            border-bottom: 1px solid rgba(33, 37, 41, 0.4);
 
             &:hover {
-
                 background-color: $color-primary-faint;
-                border-bottom: 1px solid rgba(33, 37, 41, 0.8);
+                border-bottom: 1px solid $color-dark;
                 text-decoration: none;
             }
         }
     }
 
     .contents {
-
         padding-top: 50px;
 
         a {
@@ -292,35 +273,31 @@ $color-font: #212529;
         }
 
         > ul {
-            padding-left: 0;
             font-weight: 300;
+            padding-left: 0;
         }
 
-        .documentSection {
-
-            font-weight: bold;
+        .document-section {
             cursor: pointer;
-            margin-bottom: 10px;
             display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
 
             &.closed ~ ul {
                 display: none;
             }
 
+            // sass-lint:disable-block nesting-depth
             ~ ul {
-
                 li {
-
                     a {
-
-                        padding: 2px 5px;
                         display: inline-block;
                         font-weight: 200;
+                        padding: 2px 5px;
 
                         &:hover {
-
+                            color: $color-dark;
                             text-decoration: none;
-                            color: #333;
                         }
 
                         &.viewing {
