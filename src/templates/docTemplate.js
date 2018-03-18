@@ -11,8 +11,6 @@ export default function DocTemplate({ data }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
 
-    console.log(sectionListDocs);
-
     return (
 
         <Container className="documentation">
