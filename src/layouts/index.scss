@@ -14,6 +14,11 @@ $color-font: #212529;
         padding: 18px 20px !important;
     }
 
+    .navbar-toggler {
+        color: #fff;
+        z-index: 100;
+    }
+
     .nav-item {
 
         a {
@@ -128,12 +133,27 @@ $color-font: #212529;
         .pullStatNumber {
 
             display: inline-block;
-            font-size: 3rem;
             color: #fff;
             background-color: #20232a;
-            padding: 10px 20px;
-            margin: 2px;
             border-radius: 5px;
+
+            font-size: 1rem;
+            padding: 10px 10px;
+            margin: 1px;
+
+            @media (min-width: 768px) {
+
+                font-size: 2rem;
+                padding: 10px 15px;
+                margin: 2px;
+            }
+
+            @media (min-width: 992px) {
+
+                font-size: 3rem;
+                padding: 10px 20px;
+                margin: 2px;
+            }
         }
     }
 }
@@ -209,8 +229,8 @@ $color-font: #212529;
 
                     margin: 30px 0;
                     border-radius: 10px;
-                    margin-left: -20px;
-                    margin-right: -20px;
+                    margin-left: -25px;
+                    margin-right: -25px;
                 }
             }
         }

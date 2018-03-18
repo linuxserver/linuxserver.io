@@ -59,7 +59,10 @@ const IndexPage = () => (
                     <div className="alignMiddle">
                         <h3>Join the conversation!</h3>
                         <p>
-                            We actively talk to our users and offer guidance and help to all that ask for it. Have a problem with Docker? Found a bug in one of our containers? Or just want to say "hi"? You are welcome to join our server and be part of the ever expanding conversation.
+                            We actively talk to our users and offer guidance and help to all that ask for it. Have a problem with Docker? Found a bug in one of our containers? Or just want to say "hi"? You are welcome to join our server and be part of the ever expanding conversation. Click on the icon below to join our server.
+                        </p>
+                        <p>
+                            <a href="https://discord.gg/YWrKVTn" target="_blank"><FontAwesomeIcon icon={DiscordIcon} style={{color: '#7289DA', fontSize: '5rem'}} /></a>
                         </p>
                     </div>
                 </Col>
