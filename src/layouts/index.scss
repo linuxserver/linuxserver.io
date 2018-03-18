@@ -178,7 +178,8 @@ $color-article-link-border: rgba(33, 37, 41, .4);
 
     h3 {
         font-size: 1.3rem;
-        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-top: 30px;
     }
 
     h4 {
@@ -198,6 +199,14 @@ $color-article-link-border: rgba(33, 37, 41, .4);
         }
 
         > div {
+
+            > ul {
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+
             > p {
                 line-height: 1.7rem;
 
@@ -227,20 +236,6 @@ $color-article-link-border: rgba(33, 37, 41, .4);
 
             &[class*='language-'] {
                 background-color: $color-code-block;
-            }
-        }
-    }
-
-    > ul {
-        > li {
-            margin-bottom: 10px;
-        }
-    }
-
-    ul {
-        li {
-            p {
-                margin-bottom: 0;
             }
         }
     }

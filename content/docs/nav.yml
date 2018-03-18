@@ -1,7 +1,9 @@
-- title: Examples
+- title: Getting Started
   items:
-    - id: example
-      title: Example Documentation
+    - id: running-our-containers
+      title: Running our Containers
+    - id: executing-containers
+      title: Executing and Inspecting
 - title: Environment
   items:
     - id: puid-pgid

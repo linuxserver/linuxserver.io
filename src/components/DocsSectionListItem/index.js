@@ -6,6 +6,10 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import AngleDownIcon from '@fortawesome/fontawesome-free-solid/faAngleDown'
 import AngleUpIcon from '@fortawesome/fontawesome-free-solid/faAngleUp'
 
+function getLink(section, item) {
+    return `/${section.directory}/${item.id}`;
+}
+
 export default class DocsSectionListItem extends React.Component {
 
     constructor(props) {
@@ -36,7 +40,7 @@ export default class DocsSectionListItem extends React.Component {
                     {
                         this.props.section.items.map((item, itemIndex) => (
                             <li key={itemIndex}>
-                                <Link to={item.id} activeClassName="viewing">{item.title}</Link>
+                                <Link to={ getLink(this.props.section, item) } activeClassName="viewing">{item.title}</Link>
                             </li>
                         ))
                     }
