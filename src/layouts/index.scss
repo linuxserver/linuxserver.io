@@ -1,0 +1,298 @@
+.main-nav {
+
+    background-color: #282c34;
+    font-weight: 300;
+    padding: 0 !important;
+
+    a {
+        color: #fff;
+        padding: 18px 20px !important;
+    }
+
+    .nav-item {
+
+        a {
+
+            &.active {
+
+                border-bottom: 3px solid orange;
+                color: orange;
+                background-color: #333;
+            }
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+
+    .navbar-brand {
+
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-left: 10px;
+
+        &:hover {
+            color: orange;
+        }
+    }
+}
+
+.page-footer {
+    color: #fff;
+    background-color: #282c34;
+}
+
+.footer-copyright {
+    background-color: #161719;
+}
+
+.container {
+
+    h3 {
+        font-weight: 100;
+    }
+}
+
+.splashParent {
+
+    background-color: #282c34;
+
+    .splash {
+
+        text-align: center;
+        color: #fff;
+        padding: 180px 0;
+
+        h1 {
+            color: orange;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        h2 {
+           font-weight: 100;
+       }
+    }
+}
+
+.usps {
+
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #efefef;
+    padding: 50px 0;
+
+    .uspIcon {
+        font-size: 5rem;
+    }
+
+    .col {
+        margin-bottom: 50px;
+    }
+}
+
+.whoAreWe {
+
+    margin-top: 50px;
+    text-align: center;
+}
+
+.totalPulls, .showcase, .usps {
+    border-top: 1px solid #efefef;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.totalPulls {
+
+    border-top: 1px solid #efefef;
+    padding: 50px 0;
+    text-align: center;
+
+    .pullStatNumbers {
+
+        margin: 20px 0;
+
+        .pullStatNumber {
+
+            display: inline-block;
+            font-size: 3rem;
+            color: #fff;
+            background-color: #20232a;
+            padding: 10px 20px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.showcase {
+
+    .showcaseImage {
+        border-radius: 5px;
+    }
+}
+
+.alignMiddle {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.documentation {
+
+    h1 {
+       margin-top: 50px;
+       font-size: 3rem;
+       font-weight: bold;
+   }
+
+   h2 {
+       margin-top: 50px;
+       margin-bottom: 20px;
+       font-weight: bold;
+       font-size: 1.5rem;
+   }
+
+   h3 {
+       margin-top: 50px;
+       font-size: 1.3rem;
+   }
+
+   h4 {
+       margin-top: 50px;
+       font-size: 1.2rem;
+   }
+
+   .article {
+
+       padding-left: 20px;
+
+       .preface {
+           margin-top: 50px;
+           font-weight: 100;
+           font-size: 1.5rem;
+           line-height: 35px;
+           color: #666;
+       }
+
+       > div {
+
+           > p {
+               line-height: 1.7rem;
+
+               > code {
+
+                   background-color: rgba(232, 62, 140, 0.1);
+                   padding: 4px;
+                   border-radius: 2px;
+               }
+           }
+       }
+
+        div {
+
+            &.gatsby-highlight {
+
+                pre {
+
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+            }
+        }
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            background-color: #2c2c38;
+        }
+    }
+
+    > ul {
+
+        > li {
+            margin-bottom: 10px;
+        }
+    }
+
+    ul {
+
+        li {
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    p {
+
+        a {
+
+            color: rgb(33, 37, 41);
+            background-color: rgba(255, 141, 0, 0.1);
+            padding: 3px;
+            border-bottom: 1px solid rgba(33, 37, 41, 0.4);
+
+            &:hover {
+
+                background-color: rgba(255, 141, 0, 0.5);
+                border-bottom: 1px solid rgba(33, 37, 41, 0.8);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .contents {
+
+        padding-top: 50px;
+
+        a {
+            color: #212529;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        > ul {
+            padding-left: 0;
+            font-weight: 300;
+        }
+
+        .documentSection {
+
+            font-weight: bold;
+            cursor: pointer;
+
+            &.closed ~ ul {
+                display: none;
+            }
+
+            ~ ul {
+
+                li {
+
+                    a {
+
+                        padding: 5px;
+                        display: inline-block;
+
+                        &:hover {
+
+                            text-decoration: none;
+                            color: #333;
+                        }
+
+                        &.viewing {
+                            border-bottom: 3px solid orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
