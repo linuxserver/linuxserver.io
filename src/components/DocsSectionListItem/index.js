@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import AngleDownIcon from '@fortawesome/fontawesome-free-solid/faAngleDown'
+import AngleUpIcon from '@fortawesome/fontawesome-free-solid/faAngleUp'
+
 export default class DocsSectionListItem extends React.Component {
 
     constructor(props) {
@@ -27,7 +31,7 @@ export default class DocsSectionListItem extends React.Component {
         return (
             <div>
                 <span onClick={this.toggle} className={ this.state.isOpen ? 'documentSection' : 'closed documentSection'}>
-                    {this.props.section.title}
+                    {this.props.section.title} <FontAwesomeIcon icon={ this.state.isOpen ? AngleUpIcon : AngleDownIcon } style={ { paddingTop: '4px' } } />
                 </span>
                 <ul>
                     {
