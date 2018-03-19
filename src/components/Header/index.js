@@ -14,7 +14,7 @@ import {
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import GitHubIcon from '@fortawesome/fontawesome-free-brands/faGithub'
-import PayPalIcon from '@fortawesome/fontawesome-free-brands/faPayPal'
+import PayPalIcon from '@fortawesome/fontawesome-free-brands/faPaypal'
 
 export default class Header extends React.Component {
 
