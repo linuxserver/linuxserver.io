@@ -9,6 +9,7 @@ $color-white: #fff;
 $color-footer: #161719;
 $color-chiclet: #20232a;
 $color-code-inline: rgba(232, 62, 140, .1);
+$color-code-inline-text: #e83e8c;
 $color-code-block: #2c2c38;
 $color-article-link-background: rgba(255, 141, 0, .1);
 $color-article-link-border: rgba(33, 37, 41, .4);
@@ -182,6 +183,7 @@ footer {
 }
 
 .documentation {
+
     h1 {
         font-size: 3rem;
         font-weight: bold;
@@ -201,6 +203,7 @@ footer {
         margin-top: 30px;
 
         code {
+            background: none !important; // sass-lint:disable-line no-important
             color: $color-dark;
             font-size: 1.3rem;
             font-weight: bold;
@@ -236,15 +239,19 @@ footer {
                 line-height: 1.7rem;
 
                 > code {
+
                     background-color: $color-code-inline;
-                    border-radius: 2px;
+                    color: $color-code-inline-text;
                     padding: 4px;
+                    text-shadow: none;
+                    word-break: break-word;
                 }
             }
         }
 
         div {
             &.gatsby-highlight {
+
                 pre {
                     border-radius: 10px;
                     margin: 30px 0;
@@ -253,16 +260,17 @@ footer {
                     padding-left: 25px;
                     padding-right: 25px;
                 }
+
+                code,
+                pre {
+
+                    &[class*='language-'] {
+                        background-color: $color-code-block;
+                    }
+                }
             }
         }
 
-        code,
-        pre {
-
-            &[class*='language-'] {
-                background-color: $color-code-block;
-            }
-        }
     }
 
     p {
