@@ -9,6 +9,12 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
+Then install all of the app's dependencies:
+
+```sh
+npm install
+```
+
 And run from your CLI:
 ```sh
 gatsby develop
