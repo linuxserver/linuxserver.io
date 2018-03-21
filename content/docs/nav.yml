@@ -4,6 +4,8 @@
       title: Running our Containers
     - id: executing-containers
       title: Executing and Inspecting
+    - id: updating-our-containers
+      title: Updating our Containers
 - title: Environment
   items:
     - id: puid-pgid

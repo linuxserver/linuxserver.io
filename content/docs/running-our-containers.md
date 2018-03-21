@@ -21,7 +21,7 @@ We have curated various base images which our main application images derive fro
 
 To help reduce variation between our images, we have adopted a common structure pattern for application config and dependent directories. This means that each image has its own internal `/config` directory which holds all application-specific configuration. With the exception of a small number of images, all of our images expose this volume.
 
-We do this because we believe that it makes it easier to answer the common question of "where does the application data get persisted?" - the answer being "always in `/config`".
+We do this because we believe that it makes it easier to answer the common question of "where does the application data get persisted?" - the answer being "always in `/config`". If you don't map this directory when creating your containers, the config will only last as long as the lifespan of the container itself!
 
 ## Creating a Container
 
