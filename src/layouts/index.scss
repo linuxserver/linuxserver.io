@@ -14,8 +14,8 @@ $color-code-block: #2c2c38;
 $color-article-link-background: rgba(255, 141, 0, .1);
 $color-article-link-border: rgba(33, 37, 41, .4);
 $color-alert-text: #004085;
-$color-alert-background: #cce5ff;
-$color-alert-border: #6d9ed4;
+$color-alert-shadow: rgba(0, 0, 0, .15);
+$color-alert-border: #de0063;
 
 html,
 body {
@@ -28,13 +28,17 @@ body {
     padding-bottom: 100px;
 }
 
-.lsio-alert {
+blockquote {
 
-    background-color: $color-alert-background;
-    border-left: 5px solid $color-alert-border;
-    color: $color-alert-text;
-    margin: 0 0 20px;
-    padding: 20px;
+    border-left: 3px solid $color-alert-border;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px 0 $color-alert-shadow;
+    font-size: 1.0625rem;
+    padding: 1.25rem 1.5rem;
+
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .main-nav {

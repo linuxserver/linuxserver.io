@@ -24,11 +24,7 @@ docker stop <container_name>
 
 Once the container has been stopped, remove it.
 
-<div class="lsio-alert">
-Did you remember to persist the <code>/config</code> volume when you originally created the container? Bear in mind, you'll lose any configuration inside the container if this volume was not persisted.
-</div>
-
-[Read up on why this is important](/docs/running-our-containers#the-code-classlanguage-textconfigcode-volume).
+> **Important**: Did you remember to persist the <code>/config</code> volume when you originally created the container? Bear in mind, you'll lose any configuration inside the container if this volume was not persisted.  [Read up on why this is important](/docs/running-our-containers#the-code-classlanguage-textconfigcode-volume).
 
 ```bash
 docker rm <container_name>
