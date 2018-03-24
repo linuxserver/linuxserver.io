@@ -15,7 +15,7 @@ $color-article-link-background: rgba(255, 141, 0, .1);
 $color-article-link-border: rgba(33, 37, 41, .4);
 $color-alert-text: #004085;
 $color-alert-shadow: rgba(0, 0, 0, .15);
-$color-alert-border: #de0063;
+$color-alert-border: #ff6a00;
 
 html,
 body {
@@ -33,8 +33,7 @@ blockquote {
     border-left: 3px solid $color-alert-border;
     border-radius: 3px;
     box-shadow: 0 2px 8px 0 $color-alert-shadow;
-    font-size: 1.0625rem;
-    padding: 1.25rem 1.5rem;
+    padding: 20px;
 
     p {
         margin-bottom: 0;
@@ -102,6 +101,7 @@ footer {
     }
 }
 
+.attributions,
 .not-found,
 .donate,
 .our-images {
@@ -149,12 +149,26 @@ footer {
     text-align: center;
 }
 
-.showcase,
 .total-pulls,
 .usps {
     border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
+}
+
+.showcase {
+
+    border-top: 1px solid $color-light;
+    padding: 50px 0;
+    text-align: center;
+
+    &.donate {
+        border-top: 0;
+    }
+
+    .showcase-image {
+        border-radius: 5px;
+    }
 }
 
 .total-pulls {
@@ -184,12 +198,6 @@ footer {
                 padding: 10px 20px;
             }
         }
-    }
-}
-
-.showcase {
-    .showcase-image {
-        border-radius: 5px;
     }
 }
 

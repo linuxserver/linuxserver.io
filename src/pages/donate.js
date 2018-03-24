@@ -3,6 +3,8 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 
 import TitleAndMetaTags from '../components/TitleAndMetaTags'
+import ServerImage from '../images/server.png';
+import UsersImage from '../images/users.png';
 
 const DonatePage = () => (
     <div>
@@ -10,23 +12,35 @@ const DonatePage = () => (
         <Container className="donate">
             <Row>
                 <Col>
-                    <h1>Donations</h1>
+                    <h1>Donate</h1>
+                </Col>
+            </Row>
+        </Container>
+        <Container className="showcase donate">
+            <Row>
+                <Col className="col mb-5" xs="12" sm="12" md="6">
+                    <img src={ServerImage} alt="Server" className="showcase-image" style={{width: '40%'}} />
+                </Col>
+                <Col className="col mb-5" xs="12" sm="12" md="6" style={{display: 'flex'}}>
+                    <div className="align-middle">
+                        <h3>Help us keep the lights on!</h3>
+                        <p>
+                            The LinuxServer group has a hefty stack of build servers, web hosts, and domains - all of which cost money to maintain and renew. Even the smallest donation from you will help us keep everything up and running so we can continue to provide our great services.
+                        </p>
+                    </div>
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <p>
-                        We do not advertise on our site, or through our images, so the upkeep of our services is funded directly out of the kind donations from you, our users! We are very proud of the service we provide, but we can't do it alone. If you can spare it, please consider donating so we can keep the lights on for another month.
-                    </p>
-                    <p>Thank you, from everyone at LinuxServer.</p>
-                    <p>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                            <input type="hidden" name="cmd" value="_s-xclick"/>
-                            <input type="hidden" name="hosted_button_id" value="PVYA74KK8C9D2"/>
-                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"/>
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1"/>
-                        </form>
-                    </p>
+                <Col className="col mb-5" xs="12" sm="12" md="6" style={{display: 'flex'}}>
+                    <div className="align-middle">
+                        <h3>Send us some love</h3>
+                        <p>
+                            Everyone at LinuxServer is a volunteer. We don't get paid to do this - we try our best to make the most of our free time to continue improving what we do. If you love what we do, why not drop us a bit of beer money to say thanks. Cheers!
+                        </p>
+                    </div>
+                </Col>
+                <Col className="col mb-5" xs="12" sm="12" md="6">
+                    <img src={UsersImage} alt="The Team" className="showcase-image" style={{width: '40%'}} />
                 </Col>
             </Row>
         </Container>
