@@ -6,6 +6,9 @@ import TitleAndMetaTags from '../components/TitleAndMetaTags'
 import ServerImage from '../images/server.png';
 import UsersImage from '../images/users.png';
 
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import PayPalIcon from '@fortawesome/fontawesome-free-brands/faPaypal'
+
 const DonatePage = () => (
     <div>
         <TitleAndMetaTags title="Donations - LinuxServer" />
@@ -17,11 +20,12 @@ const DonatePage = () => (
             </Row>
             <Row>
                 <Col>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                         <input type="hidden" name="cmd" value="_s-xclick" />
                         <input type="hidden" name="hosted_button_id" value="PVYA74KK8C9D2"/>
-                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                        <button type="submit" className="btn btn-donate" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <FontAwesomeIcon icon={PayPalIcon} /> Donate
+                        </button>
                     </form>
                 </Col>
             </Row>
