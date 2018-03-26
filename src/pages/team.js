@@ -21,7 +21,7 @@
 
 # Community Developers
 
-Developers from the community who take an active role working with us. Want us to Dockerise your app or contribute? Join our Discord!
+Developers from the community who take an active role working with us. Want us to Dockerise your app or contribute? <a href="https://discord.gg/ctsYTAq" target="_blank">Join our Discord!</a>
 
 * <b>hackerman</b> - 
 * <b>imadeofwaxdanny</b> - Lidarr
