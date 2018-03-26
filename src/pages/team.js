@@ -2,22 +2,22 @@
 
 # Founders
 
-* <b>IronicBadger</b> - <a href="https://blog.ktz.me" target="_blank">Alex Kretzschmar</a>: Project co-founder, Red Hatter, Container Evangelist, Drone Racer and tinkerer extraordinaire. 
-* <b>j0nnymoe</b> - Project co-founder: insert blurb here
+* <b>IronicBadger</b> - <a href="https://blog.ktz.me" target="_blank">Alex Kretzschmar</a>: Project co-founder, Red Hatter, Container Evangelist, Drone Racer and tinkerer extraordinaire.
+* <b>j0nnymoe</b> - Project co-founder: Coffee fueled SysAdmin
 
 # Team
 
 * <b>aptalca</b> - (optional name): insert blurb here
 * <b>chbmb</b> - (optional name): insert blurb here
-* <b>kode</b> - (optional name): insert blurb here
-* <b>nicjo814</b> - (optional name): insert blurb here
+* <b>Kode</b> - <a href="https://medium.com/@kodestar" target="_blank">Chris Hunt</a>: fanart.tv creator, Web Developer, DevOps, not enough fingers for all the pies.
+* <b>nicjo814</b> - Niclas Berglind: OMV docker plugin creator and docker enthusiast
 * <b>phendryx</b> - (optional name): insert blurb here
 * <b>saarg</b> - (optional name): insert blurb here
 * <b>sparklyballs</b> - (optional name): insert blurb here
 * <b>Squid</b> - (optional name): insert blurb here
 * <b>st4rk</b> - (optional name): insert blurb here
 * <b>TheLamer</b> - (optional name): insert blurb here
-* <b>xe</b> - (optional name): insert blurb here
+* <b>xe</b> - We know he exists somewhere.
 * <b>Zagg</b> - (optional name): insert blurb here
 
 # Community Developers
