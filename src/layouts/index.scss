@@ -112,11 +112,15 @@ footer {
 .not-found,
 .donate,
 .our-images {
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .the-team {
+
+    h3 {
+        font-size: 1.2rem;
+    }
 
     .team-member {
 
@@ -131,6 +135,7 @@ footer {
                 text-decoration: none;
             }
         }
+
 
         h4 {
             font-weight: 100;

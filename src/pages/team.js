@@ -13,7 +13,7 @@ const members = {
     ],
     team: [
         { name: "aptalca", blurb: "" },
-        { name: "chbmb", blurb: "" },
+        { name: "chbmb", gravatar: "26c29553980d7aeb8833070290688090", blurb: "" },
         { name: "Kode", gravatar: "ea0163baa79c87f2332b383930284fa7", irl: { url: "https://medium.com/@kodestar", name: "Chris Hunt" }, blurb: "fanart.tv creator, Web Developer, DevOps, not enough fingers for all the pies." },
         { name: "nicjo814", irl: { name: "Niclas Berglind" }, blurb: "OMV docker plugin creator and docker enthusiast" },
         { name: "phendryx", irl: { name: "Paul Hendryx" }, blurb: "Automation lover, developer, devops, drone / quadcopter nut and efficiently lazy." },
@@ -25,7 +25,7 @@ const members = {
         { name: "xe", blurb: "Some say he is made of exotic alien materials. All we know is, he exists somewhere." }
     ],
     community: [
-        { name: "hackerman", blurb: "" },
+        { name: "hackerman", gravatar: "5a59a839efe5bca4d6bffc8474ea2119", blurb: "" },
         { name: "imadeofwaxdanny", blurb: "Lidarr" },
         { name: "imMike", blurb: "" },
         { name: "markus101", blurb: "Sonarr" },
@@ -38,7 +38,7 @@ const members = {
     ],
     past: [
         { name: "danioj", blurb: "" },
-        { name: "lonix", blurb: "Project co-founder" },
+        { name: "lonix", gravatar: "fa813f5017f0c827e0e8005c5b290d77", blurb: "Project co-founder" },
         { name: "smdion", blurb: "" }
     ]
 };
@@ -47,53 +47,60 @@ const NotFoundPage = () => (
     <div>
         <TitleAndMetaTags title="The Team - LinuxServer" />
         <Container className="the-team">
-            <Row>
+            <Row style={{marginBottom: '5rem'}}>
                 <Col>
-                    <h1>The Team</h1>
+                    <h2>The Founders</h2>
+                    <h3>
+                        Since day-zero, these are the guys that sowed the seed which eventually became LinuxServer.io.
+                    </h3>
                 </Col>
             </Row>
-            <Row style={{marginBottom: '3rem'}}>
-                <Col>
-                    <h3>The Founders</h3>
-                </Col>
-            </Row>
-            <Row>
+            <Row style={{marginBottom: '2rem'}}>
                 {
                     members.founders.map((founder, index) => (
                         <TeamCard member={founder} key={index}/>
                     ))
                 }
             </Row>
-            <Row style={{marginBottom: '3rem'}}>
+            <Row style={{marginBottom: '5rem'}}>
                 <Col>
-                    <h3>The Team</h3>
+                    <h2>The Team</h2>
+                    <h3>
+                        A diverse group of people dedicating their spare time to help LinuxServer improve. With skills ranging from shell scripting, web development, Docker management, and writing, the mainstay team are the guys behind the name.
+                    </h3>
                 </Col>
             </Row>
-            <Row>
+            <Row style={{marginBottom: '2rem'}}>
                 {
                     members.team.map((teamMember, index) => (
                         <TeamCard member={teamMember} key={index}/>
                     ))
                 }
             </Row>
-            <Row style={{marginBottom: '3rem'}}>
+            <Row style={{marginBottom: '5rem'}}>
                 <Col>
-                    <h3>Community Developers</h3>
+                    <h2>Community Developers</h2>
+                    <h3>
+                        Ambassadors for the very applications LinuxServer distributes via its images - these guys help us ensure our images are the best they can be by providing much needed insight into each applications' needs.
+                    </h3>
                 </Col>
             </Row>
-            <Row>
+            <Row style={{marginBottom: '2rem'}}>
                 {
                     members.community.map((teamMember, index) => (
                         <TeamCard member={teamMember} key={index}/>
                     ))
                 }
             </Row>
-            <Row style={{marginBottom: '3rem'}}>
+            <Row style={{marginBottom: '5rem'}}>
                 <Col>
-                    <h3>Past Contributors</h3>
+                    <h2>Past Contributors</h2>
+                    <h3>
+                        Those that have since left us, but who's work in the past has helped bolster LinuxServer.io.
+                    </h3>
                 </Col>
             </Row>
-            <Row>
+            <Row style={{marginBottom: '2rem'}}>
                 {
                     members.past.map((teamMember, index) => (
                         <TeamCard member={teamMember} key={index}/>
