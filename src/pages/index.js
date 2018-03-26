@@ -20,8 +20,8 @@ const IndexPage = () => (
             <Container className="splash">
                 <Row>
                     <Col>
-                        <h1>LinuxServer</h1>
-                        <h2>Community Docker Images, made with love</h2>
+                        <h1>LinuxServer.io</h1>
+                        <h2>We make and maintain container images for the community.</h2>
                     </Col>
                 </Row>
             </Container>
@@ -30,31 +30,37 @@ const IndexPage = () => (
             <Row>
                 <Col lg="12">
                     <h3>Who are we?</h3>
-                    <p>We are a group of home server enthusiasts that wish to give back to the community. Our primary goal is to provide functional, easy-to-use and streamlined Docker images. </p>
+                    <p>We are a group of like minded enthusiasts from across the world building and maintaining the largest collection of container images on the web.</p>
+                    <p>At our core are the principles behind Free and Open Source Software.</p>
+                    <p>Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.</p>
+                    
                 </Col>
             </Row>
+        </Container>
+        <Container className="total-pulls">
+            <DockerPullStats />
         </Container>
         <Container className="usps">
             <Row>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Standardised Images</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={DockerIcon} style={{color: '#009bff'}} /></span>
-                    <p>All of our images are built from the same base, which we have uniquely curated. By using <code>s6-overlay</code>, each of our base images are highly extendable, making them configurable for practically any application.</p>
+                    <p>All of our images are built from the same base, which we have uniquely curated. </p>
+                    <p>By using <code><a href="https://github.com/just-containers/s6-overlay" target="_blank">s6-overlay</a></code>, each of our base images are highly extendable, making them configurable for practically any application.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Weekly Updates</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={JenkinsIcon} /></span>
-                    <p>Using Jenkins as our build pipeline, all of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date.</p>
+                    <p>We use <a href="https://ci.linuxserver.io/" target="_blank">Jenkins</a> as our build pipeline and it publicly viewable.</p>
+                    <p>All of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date with latest application features and security fixes from upstream.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
-                    <h3>Container Support</h3>
+                    <h3>Support</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={DiscordIcon} style={{color: '#7289DA'}} /></span>
-                    <p>Unlike other image vendors, we provide support for our users via our Discord server. Head on over and have a chat!</p>
+                    <p>We provide support for our users via our Discord server.</p>
+                    <p>Head on over and have a chat!</p>
                 </Col>
             </Row>
-        </Container>
-        <Container className="total-pulls">
-            <DockerPullStats />
         </Container>
         <Container className="showcase">
             <Row>
