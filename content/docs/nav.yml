@@ -1,12 +1,31 @@
 - title: Getting Started
   items:
+    - id: container-101
+      title: Containers 101
     - id: running-our-containers
       title: Running our Containers
-    - id: executing-containers
-      title: Executing and Inspecting
     - id: updating-our-containers
       title: Updating our Containers
-- title: Environment
+    - id: installing-docker
+      title: Install docker
+    - id: tls-everywhere
+      title: TLS/SSL with Let's Encrypt
+- title: Tutorials & Guides
+  items:
+    - id: how-to-guides
+      title: Our How-to Guides List
+    - id: started-with-compose
+      title: An intro to docker-compose
+    - id: executing-containers
+      title: Executing and Inspecting Containers
+    - id: ansible-intro
+      title: Basic automation with Ansible
+- title: Tips & Tricks
   items:
     - id: puid-pgid
       title: Understanding PUID and PGID
+    - id: persisting-data
+      title: Using container volumes
+    - id: backing-up
+      title: Backing up containers
+
