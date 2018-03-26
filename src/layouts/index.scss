@@ -41,6 +41,7 @@ blockquote {
 }
 
 .main-nav {
+
     background-color: $color-splash;
     font-weight: 300;
     padding: 0 !important; // sass-lint:disable-line no-important
@@ -106,12 +107,52 @@ footer {
     }
 }
 
+.the-team,
 .attributions,
 .not-found,
 .donate,
 .our-images {
     margin-top: 20px;
     text-align: center;
+}
+
+.the-team {
+
+    .team-member {
+
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+            color: $color-primary;
+            font-weight: 200;
+
+            &:hover { // sass-lint:disable-line nesting-depth
+                text-decoration: none;
+            }
+        }
+
+        h4 {
+            font-weight: 100;
+        }
+
+        img {
+            border-radius: 100px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .avatar {
+
+            border-radius: 100px;
+            box-shadow: 0 2px 5px 0 $color-alert-shadow;
+            height: 110px;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            padding: 5px;
+            width: 110px;
+        }
+    }
 }
 
 .splash-parent {
@@ -135,10 +176,16 @@ footer {
 }
 
 .usps {
+
     border-top: 1px solid $color-light;
     margin-top: 50px;
     padding: 50px 0;
     text-align: center;
+
+    a {
+        color: $color-primary;
+        font-weight: 400;
+    }
 
     .usp-icon {
         font-size: 5rem;
