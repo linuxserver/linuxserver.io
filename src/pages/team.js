@@ -11,14 +11,13 @@
 * <b>chbmb</b> - (optional name): insert blurb here
 * <b>Kode</b> - <a href="https://medium.com/@kodestar" target="_blank">Chris Hunt</a>: fanart.tv creator, Web Developer, DevOps, not enough fingers for all the pies.
 * <b>nicjo814</b> - Niclas Berglind: OMV docker plugin creator and docker enthusiast
-* <b>phendryx</b> - (optional name): insert blurb here
-* <b>saarg</b> - (optional name): insert blurb here
-* <b>sparklyballs</b> - (optional name): insert blurb here
+* <b>phendryx</b> - Paul Hendryx: Automation lover, developer, devops, drone / quadcopter nut and efficiently lazy.
+* <b>saarg</b> - Torbjørn Brekke: Dockerizer, Home Cinema enthusiast, Jazz Fusion lover and Pour Over Coffee Brewer.
+* <b>sparklyballs</b> - Anon.E.Mouse: Guardian of the biscuits, Docker Dude, Old, Blind-ish and Deaf-ish
 * <b>Squid</b> - (optional name): insert blurb here
 * <b>st4rk</b> - (optional name): insert blurb here
 * <b>TheLamer</b> - (optional name): insert blurb here
-* <b>xe</b> - We know he exists somewhere.
-* <b>Zagg</b> - (optional name): insert blurb here
+* <b>xe</b> - Some say he is made of exotic alien materials. All we know is, he exists somewhere.
 
 # Community Developers
 
@@ -33,7 +32,7 @@ Developers from the community who take an active role working with us. Want us t
 * <b>TheOtherP</b> - Hydra
 * <b>TidusJar</b> - Ombi
 * <b>Ziggimon</b> - Plex
-
+* <b>Zagg</b>
 
 # Past Contributors
 
