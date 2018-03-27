@@ -12,7 +12,7 @@ const members = {
         { name: "j0nnymoe", gravatar: "56783d65ac1011a1c612dcf15d469e19", blurb: "Project co-founder: Coffee fueled SysAdmin." }
     ],
     team: [
-        { name: "aptalca", blurb: "" },
+        { name: "aptalca", blurb: "Of House Aptalca, Third of His Name, Knower of Nothings, The Sunburnt, Breaker of Scripts, Sitter on the Ceramic Throne" },
         { name: "chbmb", gravatar: "26c29553980d7aeb8833070290688090", blurb: "" },
         { name: "Kode", gravatar: "ea0163baa79c87f2332b383930284fa7", irl: { url: "https://medium.com/@kodestar", name: "Chris Hunt" }, blurb: "fanart.tv creator, Web Developer, DevOps, not enough fingers for all the pies." },
         { name: "nicjo814", irl: { name: "Niclas Berglind" }, blurb: "OMV docker plugin creator and docker enthusiast" },

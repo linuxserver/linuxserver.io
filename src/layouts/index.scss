@@ -97,6 +97,7 @@ footer {
     ul {
 
         list-style-type: none;
+        margin-bottom: 100px;
         padding: 0;
 
         li {
@@ -104,8 +105,9 @@ footer {
 
             span {
                 color: $color-darkish;
+                display: inline-block;
                 font-size: .7rem;
-                margin-left: 5px;
+                margin-left: 10px;
             }
         }
     }
@@ -207,7 +209,6 @@ footer {
 .usps {
 
     border-top: 1px solid $color-light;
-    margin-top: 50px;
     padding: 50px 0;
     text-align: center;
 
@@ -221,12 +222,19 @@ footer {
     }
 
     .col {
-        margin-bottom: 50px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
 .who-are-we {
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
 }
 
@@ -253,14 +261,25 @@ footer {
 }
 
 .total-pulls {
+
     border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 
+    a {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
     .pull-stat-numbers {
+
         margin: 20px 0;
 
         .pull-stat-number {
+
             background-color: $color-chiclet;
             border-radius: 5px;
             color: $color-white;
@@ -268,11 +287,13 @@ footer {
             font-size: 1rem;
             margin: 1px;
             padding: 10px;
+
             @media (min-width: 768px) {
                 font-size: 2rem;
                 margin: 2px;
                 padding: 10px 15px;
             }
+
             @media (min-width: 992px) {
                 font-size: 3rem;
                 margin: 2px;
@@ -281,15 +302,15 @@ footer {
         }
 
         .pull-stat-comma {
+
             border-radius: 5px;
             display: inline-block;
             font-size: 1rem;
             margin: 1px;
-            padding: 10px;
+
             @media (min-width: 992px) {
                 font-size: 3rem;
-                margin: 0px;
-                padding: 2px 1px;
+                margin: 0;
             }
         }
     }

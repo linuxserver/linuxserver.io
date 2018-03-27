@@ -28,7 +28,7 @@ export default class Footer extends React.Component {
                             <ul>
                                 <li><Link to="/team">The Team</Link></li>
                                 <li><Link to="/donate">Donate</Link></li>
-                                <li><a href="https://blog.linuxserver.io" target="_blank">Blog <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://blog.linuxserver.io" target="_blank">Blog<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
                                 <li><Link to="/attributions">Attributions</Link></li>
                             </ul>
                         </Col>
@@ -36,11 +36,11 @@ export default class Footer extends React.Component {
                         <Col md="4">
                             <h5>Channels</h5>
                             <ul>
-                                <li><a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
-                                <li><a href="https://github.com/linuxserver" target="_blank">GitHub <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
-                                <li><a href="https://twitter.com/linuxserverio" target="_blank">Twitter <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
-                                <li><a href="https://www.facebook.com/linuxserver.io/" target="_blank">Facebook <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
-                                <li><a href="https://discord.gg/YWrKVTn" target="_blank">Discord <span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://github.com/linuxserver" target="_blank">GitHub<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://twitter.com/linuxserverio" target="_blank">Twitter<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://www.facebook.com/linuxserver.io/" target="_blank">Facebook<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
+                                <li><a href="https://discord.gg/YWrKVTn" target="_blank">Discord<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
                             </ul>
                         </Col>
                     </Row>
