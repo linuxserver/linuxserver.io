@@ -3,6 +3,26 @@ import Link from 'gatsby-link'
 
 import { Container, Row, Col } from 'reactstrap';
 
+let formatNumber = function(num) {
+
+    var array = num.toString().split('');
+    var index = -3;
+    while (array.length + index > 0) {
+        array.splice(index, 0, ',');
+        index -= 4;
+    }
+    return array;
+}
+
+let renderNumber = function(value, index) {
+
+    if (value === ',') {
+        return <div className="pull-stat-comma" key={index}>{value}</div>
+    } else {
+        return <div className="pull-stat-number" key={index}>{value}</div>
+    }
+}
+
 export default class DockerPullStats extends React.Component {
 
     constructor(props) {
@@ -11,7 +31,7 @@ export default class DockerPullStats extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            images: []
+            count: 0
         }
     }
 
@@ -21,16 +41,24 @@ export default class DockerPullStats extends React.Component {
             .then(response => response.json())
             .then(result => {
 
+                let aggregatedCount = 0, aggregatedArray;
+
+                result.forEach((image) => {
+                    aggregatedCount += image.count;
+                });
+
+                aggregatedArray = formatNumber(aggregatedCount);
+
                 this.setState({
                     isLoaded: true,
-                    images: result
+                    count: aggregatedArray
                 });
             });
     }
 
     render() {
 
-        const { error, isLoaded, images } = this.state;
+        const { error, isLoaded, count } = this.state;
 
         if (isLoaded) {
 
@@ -43,17 +71,9 @@ export default class DockerPullStats extends React.Component {
                     </Row>
                     <Row className="pull-stat-numbers">
                         <Col>
-                            <div className="pull-stat-number">3</div>
-                            <div className="pull-stat-number">5</div>
-                            <div className="pull-stat-number">5</div>
-                            <div className="pull-stat-comma">,</div>
-                            <div className="pull-stat-number">8</div>
-                            <div className="pull-stat-number">4</div>
-                            <div className="pull-stat-number">3</div>
-                            <div className="pull-stat-comma">,</div>
-                            <div className="pull-stat-number">2</div>
-                            <div className="pull-stat-number">5</div>
-                            <div className="pull-stat-number">0</div>
+                            {
+                                count.map((numberValue, index) => renderNumber(numberValue, index))
+                            }
                         </Col>
                     </Row>
                     <Row>
