@@ -43,25 +43,28 @@ const IndexPage = () => (
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Standardised Images</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={DockerIcon} style={{color: '#009bff'}} /></span>
-                    <p>All of our images are built from the same base, which we have uniquely curated. </p>
+                    <p>Our images are built from the same base, which we have uniquely curated. </p>
                     <p>By using <code><a href="https://github.com/just-containers/s6-overlay" target="_blank">s6-overlay</a></code>, each of our base images are highly extendable, making them configurable for practically any application.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Weekly Updates</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={JenkinsIcon} /></span>
-                    <p>We use <a href="https://ci.linuxserver.io/" target="_blank">Jenkins</a> as our build pipeline and it publicly viewable.</p>
-                    <p>All of our images are updated on a weekly basis, ensuring all of our users are kept up-to-date with latest application features and security fixes from upstream.</p>
+                    <p>Our build pipeline is a publicly accessible <a href="https://ci.linuxserver.io/" target="_blank">Jenkins</a> server.</p>
+                    <p>This pipeline is triggered on a weekly basis, ensuring all of our users are kept up-to-date with latest application features and security fixes from upstream.</p>
                 </Col>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Support</h3>
                     <span className="usp-icon"><FontAwesomeIcon icon={DiscordIcon} style={{color: '#7289DA'}} /></span>
-                    <p>We provide support for our users via our Discord server.</p>
+                    <p>Support is provided for our users via our Discord server - a place where all team members reside.</p>
                     <p>Head on over and have a chat!</p>
                 </Col>
             </Row>
         </Container>
         <Container className="showcase">
             <Row>
+                <Col className="col" xs="12" sm="12" md="6">
+                    <img src={DiscordScreenshot} alt="Discord" className="showcase-image" />
+                </Col>
                 <Col className="col" xs="12" sm="12" md="6" style={{display: 'flex'}}>
                     <div className="align-middle">
                         <h3>Join the conversation!</h3>
@@ -72,9 +75,6 @@ const IndexPage = () => (
                             <a href="https://discord.gg/YWrKVTn" target="_blank"><FontAwesomeIcon icon={DiscordIcon} style={{color: '#7289DA', fontSize: '5rem'}} /></a>
                         </p>
                     </div>
-                </Col>
-                <Col className="col" xs="12" sm="12" md="6">
-                    <img src={DiscordScreenshot} alt="Discord" className="showcase-image" />
                 </Col>
             </Row>
         </Container>

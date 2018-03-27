@@ -29,6 +29,10 @@ blockquote {
     }
 }
 
+p {
+    line-height: 30px;
+}
+
 .main-nav {
 
     background-color: $color-splash;
@@ -75,7 +79,7 @@ footer {
     background-color: $color-splash;
     color: $color-white;
     min-height: 300px;
-    padding: 50px;
+    padding: 50px 50px 0;
     position: relative;
     width: 100%;
 
@@ -208,7 +212,6 @@ footer {
 
 .usps {
 
-    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 
@@ -240,14 +243,12 @@ footer {
 
 .total-pulls,
 .usps {
-    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 }
 
 .showcase {
 
-    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 
@@ -262,7 +263,6 @@ footer {
 
 .total-pulls {
 
-    border-top: 1px solid $color-light;
     padding: 50px 0;
     text-align: center;
 

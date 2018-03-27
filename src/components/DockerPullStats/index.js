@@ -78,7 +78,7 @@ export default class DockerPullStats extends React.Component {
                     </Row>
                     <Row>
                         <Col>
-                            <p>We pride ourselves on the commitment we make to the community and our users. Over the years, we have worked hard to build a name that resonates with home server enthusiasts and newcomers. Our images are for everyone, and always will be.</p>
+                            <p>Our commitment is to the community and our users. Over the years, we have worked hard to build a name that resonates with home server enthusiasts and newcomers. Our images are for everyone, and always will be.</p>
                         </Col>
                     </Row>
                 </div>
