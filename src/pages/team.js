@@ -43,7 +43,7 @@ const members = {
     ]
 };
 
-const NotFoundPage = () => (
+const TeamPage = () => (
     <div>
         <TitleAndMetaTags title="The Team - LinuxServer" />
         <Container className="the-team">
@@ -81,7 +81,7 @@ const NotFoundPage = () => (
                 <Col>
                     <h2>Community Developers</h2>
                     <h3>
-                        Ambassadors for the very applications LinuxServer distributes via its images - these guys help us ensure our images are the best they can be by providing much needed insight into each applications' needs.
+                        Ambassadors for the very applications LinuxServer distributes via its images - these guys help us ensure our images are the best they can be by providing much needed insight into each application's needs.
                     </h3>
                 </Col>
             </Row>
@@ -96,7 +96,7 @@ const NotFoundPage = () => (
                 <Col>
                     <h2>Past Contributors</h2>
                     <h3>
-                        Those that have since left us, but who's work in the past has helped bolster LinuxServer.io.
+                        Those who have since left us, but whose work in the past has helped bolster LinuxServer.io.
                     </h3>
                 </Col>
             </Row>
@@ -111,4 +111,4 @@ const NotFoundPage = () => (
     </div>
 )
 
-export default NotFoundPage
+export default TeamPage

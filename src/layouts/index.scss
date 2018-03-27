@@ -17,17 +17,6 @@ $color-alert-text: #004085;
 $color-alert-shadow: rgba(0, 0, 0, .15);
 $color-alert-border: #ff6a00;
 
-html,
-body {
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    height: 100%;
-    padding-bottom: 100px;
-}
-
 blockquote {
 
     border-left: 3px solid $color-alert-border;
@@ -84,14 +73,49 @@ blockquote {
 footer {
 
     background-color: $color-splash;
-    bottom: 0;
     color: $color-white;
-    position: absolute;
+    min-height: 300px;
+    padding: 50px;
+    position: relative;
     width: 100%;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    h5 {
+        color: $color-light;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin: 1.2rem 0;
+
+            span {
+                color: $color-darkish;
+                font-size: .7rem;
+                margin-left: 5px;
+            }
+        }
+    }
 
     .footer-copyright {
         background-color: $color-footer;
+        bottom: 0;
         font-size: .8rem;
+        position: absolute;
+        width: 100%;
     }
 }
 
