@@ -189,7 +189,7 @@ footer {
 
     .splash {
         color: $color-white;
-        padding: 180px 0;
+        padding: 125px 0;
         text-align: center;
 
         h1 {
@@ -277,6 +277,19 @@ footer {
                 font-size: 3rem;
                 margin: 2px;
                 padding: 10px 20px;
+            }
+        }
+
+        .pull-stat-comma {
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1rem;
+            margin: 1px;
+            padding: 10px;
+            @media (min-width: 992px) {
+                font-size: 3rem;
+                margin: 0px;
+                padding: 2px 1px;
             }
         }
     }

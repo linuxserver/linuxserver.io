@@ -30,10 +30,8 @@ const IndexPage = () => (
             <Row>
                 <Col lg="12">
                     <h3>Who are we?</h3>
-                    <p>We are a group of like minded enthusiasts from across the world building and maintaining the largest collection of container images on the web.</p>
-                    <p>At our core are the principles behind Free and Open Source Software.</p>
-                    <p>Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.</p>
-                    
+                    <p>We are a group of like minded enthusiasts from across the world.</p> 
+                    <p>We have built and maintainin the largest collection of container images on the web and at our core are the principles behind Free and Open Source Software. Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.</p>
                 </Col>
             </Row>
         </Container>
