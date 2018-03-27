@@ -21,7 +21,7 @@ const members = {
         { name: "sparklyballs", gravatar: "78f90955de2d57d2d0764eff0058b47b", blurb: "Guardian of the biscuits, Docker Dude, Old, Blind-ish and Deaf-ish" },
         { name: "Squid" },
         { name: "Stark", gravatar: "93c8297ad39bdd7b65e3faef60f73aee", irl: { name: "Josh Stark" }, blurb: "Full-stack Software Engineer; Biker; Full-time grammar police." },
-        { name: "TheLamer" },
+        { name: "TheLamer", blurb: "Taisun.io creator, lives in CLI, professional Googler, got 99 problems but Windows ain't one." },
         { name: "xe", blurb: "Some say he is made of exotic alien materials. All we know is, he exists somewhere." }
     ],
     community: [
