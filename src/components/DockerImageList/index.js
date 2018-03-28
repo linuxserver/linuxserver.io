@@ -80,7 +80,7 @@ export default class DockerImageList extends React.Component {
                         <tr>
                             <th style={{textAlign: 'left'}}>Image</th>
                             <th>x86</th>
-                            <th>aarch</th>
+                            <th>aarch64</th>
                         </tr>
                     </thead>
                     <tbody>
