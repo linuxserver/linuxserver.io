@@ -1,6 +1,6 @@
 - title: Getting Started
   items:
-    - id: container-101
+    - id: containers-101
       title: Containers 101
     - id: running-our-containers
       title: Running our Containers
@@ -28,4 +28,3 @@
       title: Using container volumes
     - id: backing-up
       title: Backing up containers
-

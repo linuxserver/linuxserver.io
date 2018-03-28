@@ -1,7 +1,7 @@
 ---
-path: "/docs/container-101"
+path: "/docs/containers-101"
 date: "2017-11-07"
-title: "Container 101"
+title: "Containers 101"
 ---
 
 <div class="preface">
@@ -34,7 +34,7 @@ There are a few terms you might find useful to understand when working with cont
 
 ## Key Concepts
 
-Containers are completely sandboxed environments by the Linux kernel. It may help you to think of them *somewhat* like a small VM however in practice this is largely false. The Linux kernel controls access to various system resources utilising control groups (cgroups). We rely on docker to translate these complex concepts into simple ones that users can understand and consume. 
+Containers are completely sandboxed environments by the Linux kernel. It may help you to think of them *somewhat* like a small VM however in practice this is largely false. The Linux kernel controls access to various system resources utilising control groups (cgroups). We rely on docker to translate these complex concepts into simple ones that users can understand and consume.
 
 By default a running container has absolutely no context of the world around it. Out the box you cannot connect from the outside world to the running webservers on ports 80 and 443 below. To allow entry to the sandbox from the outside world we must explicitly allow entry using the `-p` flag.
 
