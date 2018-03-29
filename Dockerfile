@@ -6,7 +6,8 @@ COPY . /usr/src/app/
 RUN \
  echo "**** install nodejs-npm ****" && \
  apk add --no-cache \
-	nodejs-npm && \
+	nodejs-npm \
+	tar && \
  echo "**** install node packages ****" && \
  npm install --global \
 	gatsby \
@@ -17,3 +18,7 @@ RUN \
  cd /usr/src/app && \
  npm install && \
  gatsby build
+
+RUN \
+ echo "**** tar web files ****" && \
+ tar -zcf lsio.tar.gz -C /usr/src/app .
