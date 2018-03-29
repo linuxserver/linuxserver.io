@@ -18,8 +18,6 @@
       title: An intro to docker-compose
     - id: executing-containers
       title: Executing and Inspecting Containers
-    - id: ansible-intro
-      title: Basic automation with Ansible
 - title: Tips & Tricks
   items:
     - id: puid-pgid

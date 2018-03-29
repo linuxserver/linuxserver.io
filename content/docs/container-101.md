@@ -42,6 +42,6 @@ By default a running container has absolutely no context of the world around it.
 docker run -d --name=letsencrypt -p 80:80 -p 443:443 linuxserver/letsencrypt
 ```
 
-Take this concept and multipy it across all aspects of a running application. Ports, volumes (i.e. the files you want to be available inside the container from outside the container), environment variables and so on.
+Take this concept and multipy it across all aspects of a running application. Ports, volumes (i.e. the files you want to be available inside the container from outside the container), environment variables and so on. For us as developers this allows us to isolate your system from troubleshooting as the box the container is running in (the container) is identical to the next.
 
 Containers are an amazing way to run applications in a secure, sandboxed way.
