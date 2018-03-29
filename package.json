@@ -34,7 +34,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-plugin-sass": "^1.0.23",
+    "gatsby-plugin-sass": "^1.0.19",
     "prettier": "^1.11.1"
   }
 }
