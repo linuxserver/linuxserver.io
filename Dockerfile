@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.7
+FROM alpine
 
 COPY . /usr/src/app/
 
@@ -8,4 +8,5 @@ RUN apk add --no-cache \
 	gatsby \
 	gatsby-cli
 RUN cd /usr/src/app && \
+ npm install && \
  gatsby build
