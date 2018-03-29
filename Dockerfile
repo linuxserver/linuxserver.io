@@ -18,7 +18,7 @@ RUN \
  cd /usr/src/app && \
  npm install && \
  gatsby build && \
- chowm 33:33 -R /usr/src/app
+ chown 33:33 -R /usr/src/app
 
 RUN \
  echo "**** tar web files ****" && \
