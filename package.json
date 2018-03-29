@@ -10,7 +10,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.8",
     "@fortawesome/react-fontawesome": "0.0.17",
     "bootstrap": "^4.0.0",
-    "gatsby": "^1.9.238",
+    "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-remark-autolink-headers": "^1.4.13",
