@@ -22,7 +22,7 @@ RUN \
 
 RUN \
  echo "**** tar web files ****" && \
- tar -zcf lsio.tar.gz -C /usr/src/app .
+ tar -zcf lsio.tar.gz -C /usr/src/app/public .
 
 # echo copies tarball to /mnt for easier extraction using docker run command
 CMD ["cp", "-avr", "/lsio.tar.gz", "/mnt/"]
