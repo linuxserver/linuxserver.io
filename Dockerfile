@@ -1,8 +1,11 @@
-FROM node
+FROM lsiobase/alpine:3.7
 
 COPY . /usr/src/app/
-WORKDIR /usr/src/app
-RUN npm install --global \
+
+RUN apk add --no-cache \
+	nodejs-npm && \
+ npm install --global \
 	gatsby \
 	gatsby-cli
-RUN gatsby build
+RUN cd /usr/src/app && \
+ gatsby build
