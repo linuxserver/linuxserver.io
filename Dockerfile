@@ -1,9 +1,8 @@
 FROM node
 
+COPY . /usr/src/app/
 WORKDIR /usr/src/app
-
 RUN npm install --global \
 	gatsby \
 	gatsby-cli
-
-CMD ["gatsby", "build"]
+RUN gatsby build
