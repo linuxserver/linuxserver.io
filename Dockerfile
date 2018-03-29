@@ -17,7 +17,8 @@ RUN \
  echo "**** build linuxserver website ****" && \
  cd /usr/src/app && \
  npm install && \
- gatsby build
+ gatsby build && \
+ chowm 33:33 -R /usr/src/app
 
 RUN \
  echo "**** tar web files ****" && \
