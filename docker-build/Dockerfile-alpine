@@ -1,7 +1,0 @@
-FROM lsiobase/alpine:3.7
-
-RUN apk add --no-cache \
-	nodejs-npm \
- npm install --global \
-	gatsby \
-	gatsby-cli
