@@ -5,7 +5,7 @@ title: "Documentation"
 ---
 
 <div class="preface">
-Welcome to the home of our documentation!
+Welcome to the Linuxserver documentation!
 </div>
 
 <p></p>
