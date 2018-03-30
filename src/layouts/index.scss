@@ -16,6 +16,7 @@ $color-article-link-border: rgba(33, 37, 41, .4);
 $color-alert-text: #004085;
 $color-alert-shadow: rgba(0, 0, 0, .15);
 $color-alert-border: #ff6a00;
+$color-code-line-highlight: #000;
 
 blockquote {
 
@@ -405,6 +406,13 @@ footer {
 
                     &[class*='language-'] {
                         background-color: $color-code-block;
+
+                        .gatsby-highlight-code-line {
+                            background-color: $color-code-line-highlight;
+                            display: block;
+                            margin: 0 -25px;
+                            padding: 0 25px;
+                        }
                     }
                 }
             }
