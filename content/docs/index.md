@@ -10,3 +10,5 @@ Welcome to the Linuxserver documentation!
 
 <p></p>
 Use the navigation menu to explore the documentation that surrounds our Docker images. You can find various pieces of information - from learning how to use our images, to more advanced explanations of how we piece everything together.
+
+Don't forget if you need extra help to hop onto our Discord server!
