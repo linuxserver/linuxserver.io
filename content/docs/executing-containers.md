@@ -26,6 +26,15 @@ docker logs -f --tail=<number_of_lines_to_start_with> <container_name>
 
 The `--tail` argument is optional, but useful if the application has been running for a long time - the `logs` command by default will output _all_ logs.
 
+To make life simpler for yourself here's a handy bash alias to do some of the leg work for you:
+
+```bash
+# ~/.bash_aliases
+alias dtail='docker logs -tf --tail="50" "$@"'
+```
+
+Execute it with `dtail <container_name>`.
+
 ## Checking the build version
 
 If you are experiencing issues with one of our containers, it helps us to know which version of the image your container is running from. The primary reason we ask for this is because you may be reporting an issue we are aware of and have subsequently fixed. However, if you are running on the latest version of our image, it could indeed be a newly found bug, which we'd want to know more about.
