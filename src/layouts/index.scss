@@ -190,23 +190,22 @@ footer {
     }
 }
 
-.splash-parent {
+.splash {
+
     background-color: $color-splash;
 
-    .splash {
-        color: $color-white;
-        padding: 125px 0;
-        text-align: center;
+    color: $color-white;
+    padding: 125px 0;
+    text-align: center;
 
-        h1 {
-            color: $color-primary;
-            font-size: 3rem;
-            font-weight: 500;
-        }
+    h1 {
+        color: $color-primary;
+        font-size: 3rem;
+        font-weight: 500;
+    }
 
-        h2 {
-            font-weight: 100;
-        }
+    h2 {
+        font-weight: 100;
     }
 }
 
@@ -221,7 +220,8 @@ footer {
     }
 
     .usp-icon {
-        font-size: 5rem;
+        display: inline-block;
+        font-size: 5.95rem;
     }
 
     .col {

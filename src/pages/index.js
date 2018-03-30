@@ -12,20 +12,19 @@ import TitleAndMetaTags from '../components/TitleAndMetaTags'
 
 import DockerPullStats from '../components/DockerPullStats'
 import DiscordScreenshot from '../images/Discord_2018-03-17_13-40-59.png';
+import MobyLogoImage from '../images/moby.png';
 
 const IndexPage = () => (
     <div>
         <TitleAndMetaTags title="LinuxServer" />
-        <div className="splash-parent">
-            <Container className="splash">
-                <Row>
-                    <Col>
-                        <h1>LinuxServer.io</h1>
-                        <h2>We make and maintain container images for the community.</h2>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+        <Container fluid={true} className="splash">
+            <Row>
+                <Col>
+                    <h1>LinuxServer.io</h1>
+                    <h2>We make and maintain container images for the community.</h2>
+                </Col>
+            </Row>
+        </Container>
         <Container className="who-are-we">
             <Row>
                 <Col lg="12">
@@ -42,7 +41,7 @@ const IndexPage = () => (
             <Row>
                 <Col className="col" xs="12" sm="12" md="4">
                     <h3>Standardised Images</h3>
-                    <span className="usp-icon"><FontAwesomeIcon icon={DockerIcon} style={{color: '#009bff'}} /></span>
+                    <img src={MobyLogoImage}/>
                     <p>Our images are built from the same base, which we have uniquely curated. </p>
                     <p>By using <code><a href="https://github.com/just-containers/s6-overlay" target="_blank">s6-overlay</a></code>, each of our base images are highly extendable, making them configurable for practically any application.</p>
                 </Col>
