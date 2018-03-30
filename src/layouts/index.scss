@@ -405,8 +405,10 @@ footer {
                 pre {
 
                     &[class*='language-'] {
+
                         background-color: $color-code-block;
 
+                        // sass-lint:disable-block nesting-depth
                         .gatsby-highlight-code-line {
                             background-color: $color-code-line-highlight;
                             display: block;
@@ -435,8 +437,37 @@ footer {
         }
     }
 
+    .contents-toggle {
+
+        font-weight: bold;
+        margin-top: 50px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
     .contents {
+
         padding-top: 50px;
+
+        @media (max-width: 768px) {
+
+            &.closed {
+                display: none;
+            }
+
+            &.open {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            &.closed {
+                display: block;
+            }
+        }
 
         a {
             color: $color-font;

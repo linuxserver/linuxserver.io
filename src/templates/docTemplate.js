@@ -19,7 +19,7 @@ export default function DocTemplate({ data }) {
             <TitleAndMetaTags title={pageTitle} />
             <Container className="documentation">
                 <Row>
-                    <Col md="4" className="contents">
+                    <Col md="4">
                         <DocsSectionList sections={sectionListDocs}/>
                     </Col>
                     <Col md="8" className="article">

@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import AngleDownIcon from '@fortawesome/fontawesome-free-solid/faAngleDown'
 import AngleUpIcon from '@fortawesome/fontawesome-free-solid/faAngleUp'
