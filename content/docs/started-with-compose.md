@@ -55,7 +55,6 @@ fi
 
 Once configured, log out and the log in again. Now you can type `dcpull` or `dcp up -d` to manage your entire fleet of containers at once. It's like magic. See the demo below for an example...
 
-<a href="https://asciinema.org/a/lhZOTPTQfjlAfZ2twntpg3Y0f" target="_blank"><img src="https://asciinema.org/a/lhZOTPTQfjlAfZ2twntpg3Y0f.png" /></a>
-<script src="https://asciinema.org/a/lhZOTPTQfjlAfZ2twntpg3Y0f.js" id="asciicast-lhZOTPTQfjlAfZ2twntpg3Y0f" async>playah</script>
+<iframe src="https://asciinema.org/a/lhZOTPTQfjlAfZ2twntpg3Y0f/embed?" id="asciicast-iframe-lhZOTPTQfjlAfZ2twntpg3Y0f" name="asciicast-iframelhZOTPTQfjlAfZ2twntpg3Y0f" scrolling="no" allowfullscreen="true" style="overflow: hidden; margin: 0px; border: 0px; display: inline-block; width: 632px; float: none; visibility: visible; height: 466px; margin: 0 auto"></iframe>
 
 There are full examples available on Github [here](https://gist.github.com/IronicBadger/362c408d1f2c27a0503cb9252b508140).
