@@ -39,7 +39,7 @@ Defining the containers running on your server as code is a core tenet of a "Dev
 Create the file `~/.bash_aliases` and populate with the following content:
 
 ```bash
-alias dcrun='docker-compose -f /opt/docker-compose.yml '
+alias dcp='docker-compose -f /opt/docker-compose.yml '
 alias dcpull='docker-compose -f /opt/docker-compose.yml pull --parallel'
 alias dclogs='docker-compose -f /opt/docker-compose.yml logs -tf --tail="50" '
 alias dtail='docker logs -tf --tail="50" "$@"'
