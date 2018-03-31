@@ -25,8 +25,18 @@ blockquote {
     box-shadow: 0 2px 8px 0 $color-alert-shadow;
     padding: 20px;
 
+    code {
+
+        background-color: $color-code-inline;
+        color: $color-code-inline-text;
+        padding: 4px;
+        text-shadow: none;
+        word-break: break-word;
+    }
+
     p {
         margin-bottom: 0;
+
     }
 }
 
@@ -106,7 +116,7 @@ footer {
         padding: 0;
 
         li {
-            margin: 1.2rem 0;
+            margin: .5rem 0;
 
             span {
                 color: $color-darkish;
@@ -356,7 +366,6 @@ footer {
     }
 
     .article {
-        padding-left: 20px;
 
         .preface {
             color: $color-darkish;
@@ -389,16 +398,32 @@ footer {
             }
         }
 
+        img {
+
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
         div {
             &.gatsby-highlight {
 
                 pre {
+
                     border-radius: 10px;
                     margin: 30px 0;
                     margin-left: -25px;
                     margin-right: -25px;
                     padding-left: 25px;
                     padding-right: 25px;
+
+                    @media (max-width: 768px) {
+
+                        border-radius: 0;
+                        margin: 30px 0;
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
                 }
 
                 code,
@@ -479,7 +504,6 @@ footer {
         }
 
         > ul {
-            font-weight: 300;
             padding-left: 0;
         }
 
@@ -495,10 +519,16 @@ footer {
 
             // sass-lint:disable-block nesting-depth
             ~ ul {
+
+                padding: 0;
+
                 li {
+
+                    margin-left: 20px;
+
                     a {
                         display: inline-block;
-                        font-weight: 200;
+                        font-weight: 400;
                         padding: 2px 5px;
 
                         &:hover {
@@ -509,7 +539,8 @@ footer {
                         &.viewing {
                             border-left: 4px solid $color-primary;
                             font-weight: bold;
-                            margin-left: -4px;
+                            margin-left: -20px;
+                            padding-left: 20px;
                         }
                     }
                 }

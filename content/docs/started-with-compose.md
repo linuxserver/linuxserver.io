@@ -1,7 +1,7 @@
 ---
 path: "/docs/started-with-compose"
 date: "2018-03-29"
-title: "Getting started with docker-compose"
+title: "An intro to docker-compose"
 ---
 
 <div class="preface">
@@ -14,8 +14,7 @@ Compose is a tool for defining and running multi-container Docker applications. 
 
 Here's a basic example for deploying a Linuxserver container with docker-compose:
 
-```bash
----
+```yaml
 version: "2"
 services:
   heimdall:
@@ -25,8 +24,8 @@ services:
     volumes:
       - /opt/appdata/heimdall:/config
     environment:
-      - PUID=1050
-      - PGID=1050
+      - PUID: 1050
+      - PGID: 1050
     restart: unless-stopped
 ```
 
