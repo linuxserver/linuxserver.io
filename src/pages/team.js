@@ -32,7 +32,7 @@ const members = {
         { name: "p3lim", blurb: "" },
         { name: "Qstick", blurb: "Lidarr" },
         { name: "TheOtherP", blurb: "Hydra" },
-        { name: "TidusJar", blurb: "Ombi" },
+        { name: "TidusJar", gravatar: "fc1f21187a572afe47d95587c32ce68f", blurb: "Ombi" },
         { name: "Ziggimon", blurb: "Plex" },
         { name: "Zagg", blurb: "" }
     ],
