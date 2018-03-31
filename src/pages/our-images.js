@@ -24,7 +24,7 @@ const ImagesPage = () => (<div>
                 <div className="align-middle">
                     <h3>From us, to Docker Hub, to you.</h3>
                     <p>
-                        We build all of our images on our own pipeline, after which get uploaded directly to <a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub</a>. The list of our images is ever expanding as we get new requests from our users. We provide images for the <code>x86</code>, <code>armhf</code> and <code>arm64</code> architectures.
+                        We build all of our images on our own <a href="https://ci.linuxserver.io" target="_blank">pipeline</a>, after which get uploaded directly to <a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub</a>. The list of our images is ever expanding as we get new requests from our users. We provide images for the <code>x86</code>, <code>armhf</code> and <code>arm64</code> architectures.
                     </p>
                 </div>
             </Col>
