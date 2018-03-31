@@ -21,8 +21,8 @@
     "jquery": "^3.0.0",
     "react": "^16.0.0",
     "react-helmet": "^5.2.0",
-    "react-popper": "^0.8.3",
-    "reactstrap": "^5.0.0-beta.3"
+    "react-popper": "^0.9.1",
+    "reactstrap": "^5.0.0"
   },
   "keywords": [
     "gatsby"

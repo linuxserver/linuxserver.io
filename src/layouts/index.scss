@@ -157,6 +157,16 @@ footer {
     text-align: center;
 }
 
+.our-images {
+
+    table {
+
+        @media (max-width: 768px) {
+            margin-left: -15px;
+        }
+    }
+}
+
 .the-team {
 
     h3 {
@@ -464,18 +474,16 @@ footer {
 
     }
 
-    p {
-        a {
-            background-color: $color-article-link-background;
-            border-bottom: 1px solid $color-article-link-border;
-            color: $color-dark;
-            padding: 3px;
+    a {
+        background-color: $color-article-link-background;
+        border-bottom: 1px solid $color-article-link-border;
+        color: $color-dark;
+        padding: 3px;
 
-            &:hover {
-                background-color: $color-primary-faint;
-                border-bottom: 1px solid $color-dark;
-                text-decoration: none;
-            }
+        &:hover {
+            background-color: $color-primary-faint;
+            border-bottom: 1px solid $color-dark;
+            text-decoration: none;
         }
     }
 
