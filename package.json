@@ -12,6 +12,7 @@
     "bootstrap": "^4.0.0",
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-remark-autolink-headers": "^1.4.13",
     "gatsby-remark-prismjs": "^1.2.20",

@@ -209,6 +209,21 @@ footer {
     padding: 125px 0;
     text-align: center;
 
+    .banner-image {
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media (min-width: 768px) {
+            width: 70%;
+        }
+
+        @media (min-width: 992px) {
+            width: 700px;
+        }
+    }
+
     h1 {
         color: $color-primary;
         font-size: 3rem;

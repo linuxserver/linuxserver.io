@@ -11,7 +11,8 @@ import DiscordIcon from '@fortawesome/fontawesome-free-brands/faDiscord'
 import TitleAndMetaTags from '../components/TitleAndMetaTags'
 
 import DockerPullStats from '../components/DockerPullStats'
-import DiscordScreenshot from '../images/Discord_2018-03-17_13-40-59.png';
+import DiscordScreenshot from '../images/Discord_2018-03-31_12-09-55.png';
+import LinuxServerBannerImage from '../images/logo-transparent-bg.png';
 import MobyLogoImage from '../images/moby.png';
 
 const IndexPage = () => (
@@ -20,7 +21,7 @@ const IndexPage = () => (
         <Container fluid={true} className="splash">
             <Row>
                 <Col>
-                    <h1>LinuxServer.io</h1>
+                    <img src={LinuxServerBannerImage} className="banner-image" />
                     <h2>We make and maintain container images for the community.</h2>
                 </Col>
             </Row>
@@ -61,7 +62,7 @@ const IndexPage = () => (
         </Container>
         <Container className="showcase">
             <Row>
-                <Col className="col" xs="12" sm="12" md="6">
+                <Col className="col" xs="12" sm="12" md="6" style={{marginBottom: '20px'}}>
                     <img src={DiscordScreenshot} alt="Discord" className="showcase-image" />
                 </Col>
                 <Col className="col" xs="12" sm="12" md="6" style={{display: 'flex'}}>
