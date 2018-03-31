@@ -57,6 +57,9 @@ export default class Header extends React.Component {
                                     <Link to="/docs" className="nav-link" activeClassName="active">Docs</Link>
                                 </NavItem>
                                 <NavItem>
+                                    <Link to="/team" className="nav-link" activeClassName="active">Team</Link>
+                                </NavItem>
+                                <NavItem>
                                     <NavLink href="https://github.com/linuxserver"><FontAwesomeIcon icon={GitHubIcon} /> Github</NavLink>
                                 </NavItem>
                                 <NavItem>
