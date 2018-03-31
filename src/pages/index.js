@@ -13,6 +13,7 @@ import TitleAndMetaTags from '../components/TitleAndMetaTags'
 import DockerPullStats from '../components/DockerPullStats'
 import DiscordScreenshot from '../images/Discord_2018-03-31_12-09-55.png';
 import LinuxServerBannerImage from '../images/logo-transparent-bg.png';
+import SplashImage from '../images/johannes-plenio-377226.jpg';
 import MobyLogoImage from '../images/moby.png';
 
 const IndexPage = () => (
