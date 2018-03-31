@@ -5,7 +5,7 @@ title: "How to guides"
 ---
 
 <div class="preface">
-We write a lot of guides on how to use our stuff. Here's a list for your delictation!
+We write a lot of guides on how to use our stuff. Here's a list for your delectation!
 </div>
 
 ## List of guides
