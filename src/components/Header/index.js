@@ -40,7 +40,7 @@ export default class Header extends React.Component {
         return (<div>
                 <Navbar className="main-nav" expand="md">
                     <Container>
-                        <NavbarBrand href="/">LinuxServer</NavbarBrand>
+                        <NavbarBrand href="/">LinuxServer.io</NavbarBrand>
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
