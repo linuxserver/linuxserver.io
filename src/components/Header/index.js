@@ -15,6 +15,7 @@ import {
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import GitHubIcon from '@fortawesome/fontawesome-free-brands/faGithub'
 import PayPalIcon from '@fortawesome/fontawesome-free-brands/faPaypal'
+import HomeIcon from '@fortawesome/fontawesome-free-solid/faHome'
 
 export default class Header extends React.Component {
 
@@ -43,6 +44,9 @@ export default class Header extends React.Component {
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <NavLink href="https://linuxserver.io"><FontAwesomeIcon icon={HomeIcon} /></NavLink>
+                                </NavItem>
                                 <NavItem>
                                     <NavLink href="https://blog.linuxserver.io">Blog</NavLink>
                                 </NavItem>

@@ -17,10 +17,10 @@ The people at Docker have kindly written what they call a "convenience script" t
 In your terminal, run:
 
 ```bash
-curl -fsSL get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+curl -sSL https://get.docker.com/ | sh
 ```
 
-This will download the shell script, then execute it under `sudo`. If you do not have `curl` installed, either install it, or use `wget` instead.
+This will download the shell script, then execute it in your shell. You will probably want to root to do this (via sudo or however else).
 
 ## User setup
 

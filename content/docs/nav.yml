@@ -24,5 +24,3 @@
       title: Understanding PUID and PGID
     - id: persisting-data
       title: Using container volumes
-    - id: backing-up
-      title: Backing up containers
