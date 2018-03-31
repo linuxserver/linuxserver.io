@@ -37,3 +37,17 @@ Now you can pull the latest version of the application image from Docker Hub.
 ```bash
 docker pull linuxserver/<image_name>
 ```
+
+### Recreate the container
+
+Finally, you can recreate the container. This is often cited as the most arduous task as it requires you to remember all of the mappings you set beforehand. You can help mitigate this step by using Docker Compose instead - this topic has been [outlined in our documentation](/docs/started-with-compose).
+
+```bash
+docker create \
+    --name=<container_name> \
+    -v <path_to_data>:/config \
+    -e PUID=<uid> \
+    -e PGID=<gid> \
+    -p <host_port>:<app_port> \
+    linuxserver/<image_name>
+```
