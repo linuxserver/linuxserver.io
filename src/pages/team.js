@@ -9,7 +9,7 @@ const members = {
 
     founders: [
         { name: "IronicBadger", gravatar: "fe787a6cc9815aba6f8d6fc22471f238", irl: { url: "https://blog.ktz.me", name: "Alex Kretzschmar" }, blurb: "Project co-founder, Red Hatter, Container Evangelist, Drone Racer and tinkerer extraordinaire." },
-        { name: "j0nnymoe", gravatar: "56783d65ac1011a1c612dcf15d469e19", blurb: "Project co-founder: Coffee fueled SysAdmin." }
+        { name: "j0nnymoe", gravatar: "56783d65ac1011a1c612dcf15d469e19", blurb: "Project co-founder and coffee fueled SysAdmin." }
     ],
     team: [
         { name: "aptalca", blurb: "Of House Aptalca, Third of His Name, Knower of Nothings, The Sunburnt, Breaker of Scripts, Sitter on the Ceramic Throne" },
