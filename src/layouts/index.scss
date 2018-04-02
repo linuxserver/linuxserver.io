@@ -472,18 +472,19 @@ footer {
             }
         }
 
-    }
+        p {
+            a {
+                background-color: $color-article-link-background;
+                border-bottom: 1px solid $color-article-link-border;
+                color: $color-dark;
+                padding: 3px;
 
-    a {
-        background-color: $color-article-link-background;
-        border-bottom: 1px solid $color-article-link-border;
-        color: $color-dark;
-        padding: 3px;
-
-        &:hover {
-            background-color: $color-primary-faint;
-            border-bottom: 1px solid $color-dark;
-            text-decoration: none;
+                &:hover {
+                    background-color: $color-primary-faint;
+                    border-bottom: 1px solid $color-dark;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
