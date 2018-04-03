@@ -6,6 +6,8 @@ import { Container, Row, Col } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import ExternalLinkIcon from '@fortawesome/fontawesome-free-solid/faExternalLinkAlt'
 
+import PoweredByDOImage from '../../images/DO_Powered_by_Badge_white.png';
+
 export default class Footer extends React.Component {
 
     constructor(props) {
@@ -21,6 +23,7 @@ export default class Footer extends React.Component {
                         <Col md="4">
                             <p>&copy; 2018 Copyright</p>
                             <h5>LinuxServer.io</h5>
+                            <a href="https://www.digitalocean.com/" target="_blank"><img src={PoweredByDOImage} style={{width: '50%'}}/></a>
                         </Col>
 
                         <Col md="4">
