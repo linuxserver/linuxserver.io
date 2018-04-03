@@ -23,7 +23,7 @@ export default class Footer extends React.Component {
                         <Col md="4">
                             <p>&copy; 2018 Copyright</p>
                             <h5>LinuxServer.io</h5>
-                            <img src={PoweredByDOImage} style={{width: '50%'}}/>
+                            <a href="https://www.digitalocean.com/" target="_blank"><img src={PoweredByDOImage} style={{width: '50%'}}/></a>
                         </Col>
 
                         <Col md="4">
