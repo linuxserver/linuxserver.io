@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import DockerIcon from '@fortawesome/fontawesome-free-brands/faDocker';
 
-import { mapImages, commarise, commaAwareSort, wildcardFilter } from '../../utils/imageUtils';
+import { mapImages, commarise, wildcardFilter } from '../../utils/imageUtils';
 
 export default class DockerImageList extends React.Component {
 
@@ -37,8 +37,12 @@ export default class DockerImageList extends React.Component {
         const { error, isLoaded, images } = this.state;
 
         const columns = [
-            { Header: 'Image', accessor: 'image', filterable: true, style: { 'textAlign': 'left', paddingLeft: '20px', textTransform: 'capitalize' }, filterMethod: wildcardFilter },
-            { Header: 'Pulls', accessor:'pulls', style: { 'textAlign': 'right' }, className: 'pull-count', sortMethod: commaAwareSort },
+            {
+                Header: 'Image', accessor: 'image', filterable: true, filterMethod: wildcardFilter,
+                style: { 'textAlign': 'left', paddingLeft: '20px', textTransform: 'capitalize' },
+                Filter: ({ filter, onChange }) => <input type='text' placeholder='Search...' onChange={event => onChange(event.target.value)} style={{width: '100%'}} />
+            },
+            { Header: 'Pulls', accessor:'pulls', style: { 'textAlign': 'right' }, className: 'pull-count', Cell: ({value}) => commarise(value) },
             { Header: 'x86', accessor: 'x86Link', sortable: false },
             { Header: 'aarch64', accessor: 'aarch64Link', sortable: false },
             { Header: 'armhf', accessor: 'armhfLink', sortable: false }
@@ -52,7 +56,7 @@ export default class DockerImageList extends React.Component {
 
             return {
                 image: appName,
-                pulls: commarise(images[appName].pulls),
+                pulls: images[appName].pulls,
                 x86Link: x86Link,
                 aarch64Link: aarch64Link,
                 armhfLink: armhfLink

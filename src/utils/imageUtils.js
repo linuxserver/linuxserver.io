@@ -60,27 +60,10 @@ const mapImages = (result) => {
     return images;
 };
 
-const commaAwareSort = (a, b, desc) => {
-
-    a = (a === null || a === undefined) ? -Infinity : Number(a.replace(/,/g, ''))
-    b = (b === null || b === undefined) ? -Infinity : Number(b.replace(/,/g, ''))
-
-    if (a > b) {
-        return 1
-    }
-
-    if (a < b) {
-        return -1
-    }
-
-    return 0
-};
-
 const wildcardFilter = (filter, row) => String(row[filter.id]).indexOf(filter.value) > -1
 
 export {
     mapImages,
     commarise,
-    commaAwareSort,
     wildcardFilter
 };
