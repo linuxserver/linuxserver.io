@@ -25,7 +25,7 @@ const commarise = (num) => {
         index -= 4;
     }
     return array.join('');
-}
+};
 
 const mapImages = (result) => {
 
@@ -36,39 +36,51 @@ const mapImages = (result) => {
         if (image.name.indexOf('baseimage') === -1 && imageExclusions.indexOf(image.name) === -1) {
 
             let mainImageName = image.name.replace('-aarch64', '');
+
             if (typeof images[mainImageName] === 'undefined') {
-
-                images[mainImageName] = {
-
-                    x86: image.arch === 'x86',
-                    armhf: image.arch === 'armhf' && !image.name.endsWith('-aarch64'),
-                    aarch64: image.arch === 'armhf' && image.name.endsWith('-aarch64'),
-                    pulls: image.count
-                }
-
-            } else {
-
-                if (image.arch === 'x86') {
-                    images[mainImageName].x86 = true;
-                }
-
-                else if (image.arch === 'armhf' && !image.name.endsWith('-aarch64')) {
-                    images[mainImageName].armhf = true;
-                }
-
-                else if (image.arch === 'armhf' && image.name.endsWith('-aarch64')) {
-                    images[mainImageName].aarch64 = true;
-                }
-
-                images[mainImageName].pulls += image.count;
+                images[mainImageName] = { pulls: 0 };
             }
+
+            if (image.arch === 'x86') {
+                images[mainImageName].x86 = { url: image.url };
+            }
+
+            else if (image.arch === 'armhf' && !image.name.endsWith('-aarch64')) {
+                images[mainImageName].armhf = { url: image.url };
+            }
+
+            else if (image.arch === 'armhf' && image.name.endsWith('-aarch64')) {
+                images[mainImageName].aarch64 = { url: image.url };
+            }
+
+            images[mainImageName].pulls += image.count;
         }
     });
 
     return images;
-}
+};
+
+const commaAwareSort = (a, b, desc) => {
+
+    a = (a === null || a === undefined) ? -Infinity : Number(a.replace(/,/g, ''))
+    b = (b === null || b === undefined) ? -Infinity : Number(b.replace(/,/g, ''))
+
+    if (a > b) {
+        return 1
+    }
+
+    if (a < b) {
+        return -1
+    }
+
+    return 0
+};
+
+const wildcardFilter = (filter, row) => String(row[filter.id]).indexOf(filter.value) > -1
 
 export {
     mapImages,
-    commarise
+    commarise,
+    commaAwareSort,
+    wildcardFilter
 };

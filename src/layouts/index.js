@@ -11,6 +11,8 @@ import 'prismjs/themes/prism-okaidia.css';
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 
+import 'react-table/react-table.css'
+
 const TemplateWrapper = ({ children }) => (
     <div>
         <Header/>

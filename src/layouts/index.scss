@@ -159,10 +159,13 @@ footer {
 
 .our-images {
 
-    table {
+    .ReactTable { // sass-lint:disable-line class-name-format
 
-        @media (max-width: 768px) {
-            margin-left: -15px;
+        margin-top: 25px;
+
+        .pull-count {
+            font-family: monospace;
+            font-size: 1.1rem;
         }
     }
 }
