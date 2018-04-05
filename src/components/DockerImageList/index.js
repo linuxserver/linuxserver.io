@@ -1,15 +1,11 @@
 import React from 'react'
+import ReactTable from 'react-table'
 import Link from 'gatsby-link'
 
-import { Table } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import DockerIcon from '@fortawesome/fontawesome-free-brands/faDocker';
 
-import { mapImages, commarise } from '../../utils/imageUtils';
-
-let buildMainUrl = (image) => `https://hub.docker.com/r/linuxserver/${image}`;
-let buildArmUrl = (image) => `https://hub.docker.com/r/lsioarmhf/${image}`;
-let buildAarch64Url = (image) => `https://hub.docker.com/r/lsioarmhf/${image}-aarch64`;
+import { mapImages, commarise, commaAwareSort, wildcardFilter } from '../../utils/imageUtils';
 
 export default class DockerImageList extends React.Component {
 
@@ -40,43 +36,31 @@ export default class DockerImageList extends React.Component {
 
         const { error, isLoaded, images } = this.state;
 
+        const columns = [
+            { Header: 'Image', accessor: 'image', filterable: true, style: { 'textAlign': 'left', paddingLeft: '20px', textTransform: 'capitalize' }, filterMethod: wildcardFilter },
+            { Header: 'Pulls', accessor:'pulls', style: { 'textAlign': 'right' }, className: 'pull-count', sortMethod: commaAwareSort },
+            { Header: 'x86', accessor: 'x86Link', sortable: false },
+            { Header: 'aarch64', accessor: 'aarch64Link', sortable: false },
+            { Header: 'armhf', accessor: 'armhfLink', sortable: false }
+        ];
+
+        const data = Object.keys(images).sort().map((appName, index) => {
+
+            let x86Link = images[appName].x86 ? <a href={images[appName].x86.url} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
+            let aarch64Link = images[appName].aarch64 ? <a href={images[appName].aarch64.url} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
+            let armhfLink = images[appName].armhf ? <a href={images[appName].armhf.url} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
+
+            return {
+                image: appName,
+                pulls: commarise(images[appName].pulls),
+                x86Link: x86Link,
+                aarch64Link: aarch64Link,
+                armhfLink: armhfLink
+            }
+        });
+
         if (isLoaded) {
-
-            return (
-                <Table striped style={{marginTop: '50px'}}>
-                    <thead>
-                        <tr>
-                            <th style={{textAlign: 'left'}}>Image</th>
-                            <th style={{textAlign: 'right'}}>Pulls</th>
-                            <th>x86</th>
-                            <th>aarch64</th>
-                            <th>armhf</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            Object.keys(images).sort().map((appName, index) => {
-
-                                let x86Link = images[appName].x86 ? <a href={buildMainUrl(appName)} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
-                                let aarch64Link = images[appName].aarch64 ? <a href={buildAarch64Url(appName)} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
-                                let armhfLink = images[appName].armhf ? <a href={buildArmUrl(appName)} target="_blank"><FontAwesomeIcon icon={DockerIcon} /></a> : <span />;
-
-                                return (
-
-                                    <tr key={index}>
-                                        <td style={{textAlign: 'left', textTransform: 'capitalize'}}>{appName}</td>
-                                        <td style={{textAlign: 'right', fontFamily: 'monospace'}}>{commarise(images[appName].pulls)}</td>
-                                        <td>{x86Link}</td>
-                                        <td>{aarch64Link}</td>
-                                        <td>{armhfLink}</td>
-                                    </tr>
-                                )
-                            })
-                        }
-                    </tbody>
-                </Table>
-            );
-
+            return <ReactTable data={data} columns={columns} showPagination={false} defaultPageSize={data.length} />;
         } else {
 
             return (
