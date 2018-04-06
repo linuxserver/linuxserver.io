@@ -60,7 +60,7 @@ const mapImages = (result) => {
     return images;
 };
 
-const wildcardFilter = (filter, row) => String(row[filter.id]).indexOf(filter.value) > -1
+const wildcardFilter = (filter, row) => String(row[filter.id]).toLowerCase().indexOf(filter.value.toLowerCase()) > -1
 
 export {
     mapImages,
