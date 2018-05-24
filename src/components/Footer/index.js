@@ -33,6 +33,7 @@ export default class Footer extends React.Component {
                                 <li><Link to="/donate">Donate</Link></li>
                                 <li><a href="https://blog.linuxserver.io" target="_blank">Blog<span><FontAwesomeIcon icon={ExternalLinkIcon} /></span></a></li>
                                 <li><Link to="/attributions">Attributions</Link></li>
+                                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                             </ul>
                         </Col>
 
