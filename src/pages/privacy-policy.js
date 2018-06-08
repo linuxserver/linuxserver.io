@@ -153,6 +153,9 @@ const PrivacyPolicyPage = () => (
                             </tr>
                         </tbody>
                     </Table>
+                    <p>
+                        Disabling cookies on the Linuxserver.io website and blog will not affect your ability to consume content. Disabling cookies on the Linuxserver.io forum may affect your ability to remain signed in.
+                    </p>
                 </Col>
             </Row>
             <Row>
@@ -183,7 +186,7 @@ const PrivacyPolicyPage = () => (
                         In accordance with the General Data Protection Regulation (GDPR), LinuxServer.io processes all data as both a Processor and as a Controller. If you wish to contact LinuxServer.io's Data Protection Officer regarding your data, you can email them at: <a href="mailto:dataprotectionofficer@linuxserver.io">dataprotectionofficer@linuxserver.io</a>. Contact can be made in order to:
                     </p>
                     <ul>
-                        <li>Request access to any personally identifiable information that LinuxServer.io has about you. This data can then be used by you fur your own purposes.</li>
+                        <li>Request access to any personally identifiable information that LinuxServer.io has about you. This data can then be used by you for your own purposes.</li>
                         <li>Correct any personally identifiable information that LinuxServer.io has about you.</li>
                         <li>Request that any part of or all personally identifiable information held by LinuxServer.io about you be removed permanently.</li>
                         <li>Restrict, suppress or block processing of your personally identifiable information - doing so may restrict your ability to access the forum.</li>
