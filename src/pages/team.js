@@ -14,7 +14,7 @@ const members = {
     team: [
         { name: "aptalca", blurb: "Of House Aptalca, Third of His Name, Knower of Nothings, The Sunburnt, Breaker of Scripts, Sitter on the Ceramic Throne" },
         { name: "chbmb", gravatar: "26c29553980d7aeb8833070290688090", blurb: "Stumbled upon Linux by accident, remains on it by choice." },
-        { name: "hackerman", gravatar: "5a59a839efe5bca4d6bffc8474ea2119", blurb: "" },
+        { name: "hackerman", gravatar: "5a59a839efe5bca4d6bffc8474ea2119", blurb: "Software dev, *nix user, hacker. Wildly mediocre at everything else." },
         { name: "homer", gravatar: "eb5e81cb61bf058914009e5eb204c9e81", blurb: "Coffee and biscuit powered BOFH, loves anything free or *nix related. Full time dad, part time geek" },
         { name: "Kode", gravatar: "ea0163baa79c87f2332b383930284fa7", irl: { url: "https://medium.com/@kodestar", name: "Chris Hunt" }, blurb: "fanart.tv creator, Web Developer, DevOps, not enough fingers for all the pies." },
         { name: "nicjo814", irl: { name: "Niclas Berglind" }, blurb: "OMV docker plugin creator and docker enthusiast" },
