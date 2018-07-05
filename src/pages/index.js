@@ -7,11 +7,13 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import DockerIcon from '@fortawesome/fontawesome-free-brands/faDocker'
 import JenkinsIcon from '@fortawesome/fontawesome-free-brands/faJenkins'
 import DiscordIcon from '@fortawesome/fontawesome-free-brands/faDiscord'
+import EditIcon from '@fortawesome/fontawesome-free-solid/faEdit'
 
 import TitleAndMetaTags from '../components/TitleAndMetaTags'
 
 import DockerPullStats from '../components/DockerPullStats'
 import DiscordScreenshot from '../images/Discord_2018-03-31_12-09-55.png';
+import BlogScreenshot from '../images/blogscreenshot.png';
 import LinuxServerBannerImage from '../images/logo-transparent-bg.png';
 import SplashImage from '../images/johannes-plenio-377226.jpg';
 import MobyLogoImage from '../images/moby.png';
@@ -33,6 +35,7 @@ const IndexPage = () => (
                     <h3>Who are we?</h3>
                     <p>We are a group of like minded enthusiasts from across the world.</p>
                     <p>We have built and maintain the largest collection of container images on the web and at our core are the principles behind Free and Open Source Software. Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.</p>
+                    <p>We also write how-to guides and other technical tidbits over on the <a href="https://blog.linuxserver.io">Linuxserver blog</a>.</p>
                 </Col>
             </Row>
         </Container>
@@ -58,6 +61,24 @@ const IndexPage = () => (
                     <span className="usp-icon"><FontAwesomeIcon icon={DiscordIcon} style={{color: '#7289DA'}} /></span>
                     <p>Support is provided for our users via our Discord server - a place where all team members reside.</p>
                     <p>Head on over and have a chat!</p>
+                </Col>
+            </Row>
+        </Container>
+        <Container className="showcase">
+            <Row>
+                <Col className="col" xs="12" sm="12" md="6" style={{display: 'flex'}}>
+                    <div className="align-middle">
+                        <h3>First class documentation!</h3>
+                        <p>
+                            We often write lengthy how-to guides covering detailed topics about all the things you can do with our containers including How-To guides, opinions and much more on the <a href="https://blog.linuxserver.io" target="_blank">LinuxServer blog</a>.
+                        </p>
+                        <p>
+                            To add to this we've begun work on an <Link to="/docs">extensive documentation section</Link> for getting started with consuming our images, contributing to the site and lots more.
+                        </p>
+                    </div>
+                </Col>
+                <Col className="col" xs="12" sm="12" md="6" style={{marginBottom: '20px'}}>
+                    <img src={BlogScreenshot} alt="Blog" className="showcase-image" style={{width: '80%'}} />
                 </Col>
             </Row>
         </Container>
