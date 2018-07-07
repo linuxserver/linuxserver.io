@@ -19,7 +19,7 @@ module.exports = {
         },
         {
             resolve: 'gatsby-plugin-sitemap',
-            'options': {
+            options: {
                 serialize: ({ site, allSitePage }) =>
                     allSitePage.edges.map(edge => {
                         return {
