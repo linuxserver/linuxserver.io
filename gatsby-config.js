@@ -1,10 +1,27 @@
 module.exports = {
     siteMetadata: {
-        title: 'LinuxServer'
+        title: 'LinuxServer',
+        siteUrl: 'https://www.linuxserver.io'
     },
     plugins: [
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://www.linuxserver.io',
+                sitemap: 'https://www.linuxserver.io/sitemap.xml',
+                policy: [
+                    {
+                        userAgent: '*',
+                        allow: '/'
+                    }
+                ]
+            }
+        },
+        {
+            resolve: 'gatsby-plugin-sitemap'
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/content/docs`,
                 name: "markdown-pages-docs"
@@ -14,7 +31,7 @@ module.exports = {
             options: {
                 plugins: [
                     {
-                        resolve: `gatsby-remark-prismjs`,
+                        resolve: 'gatsby-remark-prismjs',
                         options: {
                             classPrefix: "language-"
                         }
@@ -23,7 +40,7 @@ module.exports = {
                 ]
             }
         }, {
-            resolve: `gatsby-plugin-favicon`,
+            resolve: 'gatsby-plugin-favicon',
             options: {
                 logo: "./src/images/favicon.png",
                 injectHTML: true,
