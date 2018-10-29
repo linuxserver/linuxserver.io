@@ -66,7 +66,12 @@ export default class DockerPullStats extends React.Component {
                 <div>
                     <Row>
                         <Col>
-                            <h3>Millions of pulls from <a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub</a> and counting...</h3>
+                            <h3>One <strong>BILLION</strong> pulls from <a href="https://hub.docker.com/u/linuxserver/" target="_blank">Docker Hub</a>!</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            A huge thank you to everyone that has made this possible!
                         </Col>
                     </Row>
                     <Row className="pull-stat-numbers">
