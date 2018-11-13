@@ -5,7 +5,6 @@ const imageExclusions = [
     'dokuwiki',
     'emby',
     'flood',
-    'healthchecks',
     'home-assistant',
     'maraschino',
     'mysql',
