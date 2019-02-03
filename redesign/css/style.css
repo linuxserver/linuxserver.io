@@ -1,0 +1,147 @@
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a {
+    color: #ff5e00;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff5e00;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.container.container-home .row {
+    display: flex;
+    align-items: center;
+}
+
+.container.container-home .row > div {
+    margin-bottom: 150px;
+}
+
+.container.container-images .row {
+    display: flex;
+    align-items: center;
+}
+
+.container.container-search {
+    margin-bottom: 50px;
+}
+
+.container-search-wrapper {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+
+.container.container-search input {
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+}
+
+.container.container-home img {
+    border-radius: 3px;
+}
+
+.container.container-home img.img-shadow {
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,.10);
+}
+
+#docker-pulls div {
+    display: inline-block;
+}
+
+#docker-pulls div.pull-stat-number {
+    
+    background-color: #20232a;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+
+    #docker-pulls div.pull-stat-number {
+        font-size: 20px;
+        margin: 2px;
+        padding: 10px 12px;
+    }
+}
+
+#image-list .col {
+    text-align: center;
+    padding: 10px;
+}
+
+#image-list .col .docker-image-detail {
+
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.row.docker-image h3 {
+    text-transform: capitalize;
+}
+
+.image-tag {
+    font-style: italic;
+}
+
+#splash {
+
+    /* background-color: #282c34; */
+    
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#splash .container .row {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.container-preface {
+    padding: 50px 0;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.preface {
+    font-size: 20px;
+}
+
+.light-bg {
+    background-color: #f7f7f7;
+}
+
+.light-bg p {
+    color: #666;
+}

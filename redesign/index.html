@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>LinuxServer</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ff9e00">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/favicon-32x32.png" />&nbsp;LinuxServer.io</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Images</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://blog.linuxserver.io">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://docs.linuxserver.io">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/linuxserver">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid light-bg">
+            <div class="container container-preface">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Building and maintaining community images</h1>
+                        <p class="preface">
+                            We are a group of like minded enthusiasts from across the world.
+                            We have built and maintain the largest collection of container images on the web and at our core are the principles behind Free and Open Source Software. Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.
+                            We also write how-to guides and other technical tidbits over on the <a href="https://blog.linuxserver.io">Linuxserver blog</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container container-home">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div id="docker-pulls"></div>
+                </div>
+                <div class="col-md-6 text-justify">
+                    <h2>One billion pulls</h2>
+                    <p>
+                        Our commitment is to the community and our users. Over the years, we have worked hard to build a name that resonates with home server enthusiasts and newcomers. Our images are for everyone, and always will be.
+                        We would like to thank everyone who has used our images, and helped us acheive such a milestone.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-justify">
+                    <h2>Standardised Images</h2>
+                    <p>
+                        Our images are built from the same base, which we have uniquely curated. 
+                        By using <code><a href="https://github.com/just-containers/s6-overlay" target="_blank">s6-overlay</a></code>, each of our base images are highly extendable, making them configurable for practically any application.
+                        This standardisation not only provides uniformity; it also saves our users bandwidth and storage by having each of our images share their base layers.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/vertical.png" title="Docker Logo" alt="Blue whale 'moby' Docker Logo" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                        <img src="img/pipeline.png" title="Jenkins Pipeline" class="img-shadow" alt="Screenshot of the LinuxServer Jenkins pipeline showing multi-arch builds" />
+                </div>
+                <div class="col-md-6 text-justify">
+                    <h2>Regular Updates</h2>
+                    <p>
+                        Our build pipeline has been completely redesigned and now provides our users with fast and effective updates for our images. 
+                        When the upstream applications, or application dependencies are updated, our images will automatically rebuild. 
+                        This mechanism ensures our images remain as up-to-date as possible. Our new tagging system also provides users with clearer indications as to which application version a particular build encapsulates.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-justify">
+                    <h2>Support</h2>
+                    <p>
+                        Our community is ever expanding, and as such requires the best possible support when using our images. 
+                        We provide first-hand support via our <a href="https://discord.gg/YWrKVTn" target="_blank">Discord server</a>, as well as our <a href="https://discourse.linuxserver.io/" target="_blank">Discourse forum</a>. Whether new to LinuxServer, or a returning veteran, there will always be someone available from the team, or the community itself to help you through any issues.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/Discord_2018-03-31_12-09-55.png" title="Discord" class="img-shadow" alt="Screenshot of the LinuxServer Discord server, showing the public channels" />
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lsio.js"></script>
+
+        <script type="text/javascript">
+            pullManager.init();
+        </script>
+    </body>
+</html>
