@@ -18,6 +18,12 @@ h3 {
     font-size: 20px;
 }
 
+h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
 a {
     color: #ff5e00;
 }
@@ -132,6 +138,30 @@ a:hover {
 }
 
 .preface {
-    padding: 300px 0;
+    height: calc(100vh - 58px);
     font-size: 20px;
+}
+
+.page-footer {
+    background-color: #171717;
+    color: #FFF;
+    padding: 50px 0;
+}
+
+.page-footer img {
+    width: 50%;
+}
+
+.page-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page-footer ul li {
+    margin: 4px 0;
+}
+
+.page-footer a {
+    color: #FFF;
 }
