@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-weight: 600;
+}
+
 h2 {
     font-weight: 600;
     font-size: 24px;
@@ -111,37 +115,23 @@ a:hover {
     font-style: italic;
 }
 
-#splash {
+.container-preface {
 
-    /* background-color: #282c34; */
-    
+    background-image: url(../img/patrick-lindenberg-191841-unsplash.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    margin-bottom: 50px;
-}
-
-#splash .container .row {
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.container-preface {
-    padding: 50px 0;
     margin-bottom: 100px;
     text-align: center;
+    padding: 0;
+}
+
+.darken-bg {
+    background-color: rgba(0,0,0,0.5);
 }
 
 .preface {
+    padding: 300px 0;
     font-size: 20px;
-}
-
-.light-bg {
-    background-color: #f7f7f7;
-}
-
-.light-bg p {
-    color: #666;
 }
