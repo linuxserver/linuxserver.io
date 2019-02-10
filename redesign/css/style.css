@@ -1,7 +1,7 @@
 body {
     
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 h3 {
@@ -41,10 +41,6 @@ a:hover {
 .container.container-home .row {
     display: flex;
     align-items: center;
-}
-
-.container.container-home .row > div {
-    margin-bottom: 150px;
 }
 
 .container.container-images .row {
@@ -122,30 +118,51 @@ a:hover {
 }
 
 .container-preface {
+    background-image: url(../img/rsz_patrick-lindenberg-191841-unsplash.jpg);
+}
 
-    background-image: url(../img/patrick-lindenberg-191841-unsplash.jpg);
+.container-standard-images {
+    background-image: url(../img/rsz_fancycrave-151127-unsplash.jpg);
+}
+
+.container-documentation {
+    background-image: url(../img/rsz_alfons-morales-410757-unsplash.jpg);
+}
+
+.container-donations {
+    background-image: url(../img/rsz_wil-stewart-24562-unsplash.jpg);
+}
+
+.container--background-image {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    margin-bottom: 100px;
     text-align: center;
     padding: 0;
 }
 
 .darken-bg {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
 }
 
-.preface {
+.darken-bg--darker {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.preface, .donations {
     height: calc(100vh - 58px);
-    font-size: 20px;
+}
+
+.standard-images, .documentation {
+    height: calc(100vh);
 }
 
 .page-footer {
     background-color: #171717;
     color: #FFF;
     padding: 50px 0;
+    font-size: 16px;
 }
 
 .page-footer img {
@@ -164,4 +181,17 @@ a:hover {
 
 .page-footer a {
     color: #FFF;
+}
+
+.row--tall {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.container-privacy {
+    font-size: 16px;
+}
+
+.container-privacy .row {
+    margin-bottom: 30px;
 }
