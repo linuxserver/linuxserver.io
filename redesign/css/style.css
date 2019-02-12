@@ -195,3 +195,11 @@ a:hover {
 .container-privacy .row {
     margin-bottom: 30px;
 }
+
+.image-attributions .row div {
+    margin-bottom: 30px;
+}
+
+.image-attributions .row div img {
+    width: 100%;
+}
