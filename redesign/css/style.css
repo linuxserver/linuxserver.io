@@ -1,7 +1,5 @@
 body {
-    
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
 }
 
 h1 {
@@ -10,18 +8,17 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 30px;
 }
 
 h3 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 h5 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 12px;
+    font-size: .8rem;
 }
 
 a {
@@ -33,9 +30,13 @@ a:hover {
     color: #ff5e00;
 }
 
+h1 ~ p, h2 ~ p {
+    font-size: 1.34rem;
+}
+
 .navbar-nav .nav-item {
     margin-right: 20px;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 .container.container-home .row {
@@ -82,7 +83,7 @@ a:hover {
     border-radius: 5px;
     color: #fff;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.1rem;
     margin: 1px;
     padding: 10px;
 }
@@ -90,7 +91,7 @@ a:hover {
 @media (min-width: 992px) {
 
     #docker-pulls div.pull-stat-number {
-        font-size: 20px;
+        font-size: 1.4rem;
         margin: 2px;
         padding: 10px 12px;
     }
@@ -151,11 +152,11 @@ a:hover {
 }
 
 .preface, .donations {
-    height: calc(100vh - 58px);
+    height: calc(95vh - 58px);
 }
 
 .standard-images, .documentation {
-    height: calc(100vh);
+    height: calc(95vh);
 }
 
 .page-footer {
