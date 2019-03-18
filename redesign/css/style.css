@@ -31,7 +31,7 @@ a:hover {
 }
 
 h1 ~ p, h2 ~ p {
-    font-size: 1.34rem;
+    font-size: 1.2rem;
 }
 
 .navbar-nav .nav-item {
