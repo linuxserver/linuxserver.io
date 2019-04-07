@@ -34,6 +34,10 @@ h1 ~ p, h2 ~ p {
     font-size: 1.2rem;
 }
 
+.navbar-nav {
+    text-align: left;
+}
+
 .navbar-nav .nav-item {
     margin-right: 20px;
     font-size: .8rem;
