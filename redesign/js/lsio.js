@@ -1,4 +1,4 @@
-var API_URL = "https://images.linuxserver.io/api/v1/images";
+var API_URL = "https://fleet.linuxserver.io/api/v1/images";
 
 var pullManager = (function($) {
 
