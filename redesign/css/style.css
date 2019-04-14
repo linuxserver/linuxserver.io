@@ -92,14 +92,6 @@ h1 ~ p, h2 ~ p {
     padding: 10px;
 }
 
-@media (min-width: 992px) {
-
-    #docker-pulls div.pull-stat-number {
-        font-size: 1.4rem;
-        margin: 2px;
-        padding: 10px 12px;
-    }
-}
 
 #image-list .col {
     text-align: center;
@@ -107,7 +99,7 @@ h1 ~ p, h2 ~ p {
 }
 
 #image-list .col .docker-image-detail {
-
+    
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
     background-color: #ffffff;
@@ -207,4 +199,21 @@ h1 ~ p, h2 ~ p {
 
 .image-attributions .row div img {
     width: 100%;
+}
+
+.supporter-logo {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+
+    #docker-pulls div.pull-stat-number {
+        font-size: 1.4rem;
+        margin: 2px;
+        padding: 10px 12px;
+    }
+
+    .supporter-logo {
+        width: 25%;
+    }
 }
