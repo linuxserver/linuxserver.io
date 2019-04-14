@@ -202,7 +202,8 @@ h1 ~ p, h2 ~ p {
 }
 
 .supporter-logo {
-    width: 100%;
+    width: 25%;
+    margin: 0 20px;
 }
 
 @media (min-width: 992px) {
@@ -211,9 +212,5 @@ h1 ~ p, h2 ~ p {
         font-size: 1.4rem;
         margin: 2px;
         padding: 10px 12px;
-    }
-
-    .supporter-logo {
-        width: 25%;
     }
 }
