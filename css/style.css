@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+a {
+    color: #ff5e00;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff5e00;
+}
+
+h1 ~ p, h2 ~ p {
+    font-size: 1.2rem;
+}
+
+.navbar-nav {
+    text-align: left;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    font-size: .8rem;
+}
+
+.container.container-home .row {
+    display: flex;
+    align-items: center;
+}
+
+.container.container-images .row {
+    display: flex;
+    align-items: center;
+}
+
+.container.container-search {
+    margin-bottom: 50px;
+}
+
+.container-search-wrapper {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+
+.container.container-search input {
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+}
+
+.container.container-home img {
+    border-radius: 3px;
+}
+
+.container.container-home img.img-shadow {
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,.10);
+}
+
+#docker-pulls div {
+    display: inline-block;
+}
+
+#docker-pulls div.pull-stat-number {
+    
+    background-color: #20232a;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 1px;
+    padding: 10px;
+}
+
+
+#image-list .col {
+    text-align: center;
+    padding: 10px;
+}
+
+#image-list .col .docker-image-detail {
+    
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.row.docker-image h3 {
+    text-transform: capitalize;
+}
+
+.image-tag {
+    font-style: italic;
+}
+
+.container-preface {
+    background-image: url(../img/rsz_patrick-lindenberg-191841-unsplash.jpg);
+}
+
+.container-standard-images {
+    background-image: url(../img/rsz_fancycrave-151127-unsplash.jpg);
+}
+
+.container-documentation {
+    background-image: url(../img/rsz_alfons-morales-410757-unsplash.jpg);
+}
+
+.container-donations {
+    background-image: url(../img/rsz_wil-stewart-24562-unsplash.jpg);
+}
+
+.container--background-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.darken-bg {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.darken-bg--darker {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.preface, .donations {
+    height: calc(95vh - 58px);
+}
+
+.standard-images, .documentation {
+    height: calc(95vh);
+}
+
+.page-footer {
+    background-color: #171717;
+    color: #FFF;
+    padding: 50px 0;
+    font-size: 16px;
+}
+
+.page-footer img {
+    width: 50%;
+}
+
+.page-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page-footer ul li {
+    margin: 4px 0;
+}
+
+.page-footer a {
+    color: #FFF;
+}
+
+.row--tall {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.container-privacy {
+    font-size: 16px;
+}
+
+.container-privacy .row {
+    margin-bottom: 30px;
+}
+
+.image-attributions .row div {
+    margin-bottom: 30px;
+}
+
+.image-attributions .row div img {
+    width: 100%;
+}
+
+.supporter-logo {
+    margin: 0 20px;
+}
+
+@media (min-width: 992px) {
+
+    #docker-pulls div.pull-stat-number {
+        font-size: 1.4rem;
+        margin: 2px;
+        padding: 10px 12px;
+    }
+}
