@@ -2,6 +2,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar-brand {
+    font-family:'Montserrat', sans-serif; 
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    font-family:'Montserrat', sans-serif; 
+}
+
 h1 {
     font-weight: 600;
 }
@@ -22,12 +31,12 @@ h5 {
 }
 
 a {
-    color: #ff5e00;
+    color: #da3b8a;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ff5e00;
+    color: #da3b8a;
 }
 
 h1 ~ p, h2 ~ p {
