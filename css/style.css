@@ -222,6 +222,51 @@ h1 ~ p, h2 ~ p {
     margin: 0 20px;
 }
 
+/* Support Cards */
+.discord-button {
+    background-color: #7289DA; 
+    border-color: #7289DA;
+}
+.discord-button:hover,.discord-button:focus:hover,
+.discord-button:not(:disabled):not(.disabled):active {
+    background-color: #556ec7; 
+    border-color: #556ec7;
+}
+
+.gitbook-button {
+    background-color: #183055; 
+    border-color: #183055;
+}
+.gitbook-button:hover,.gitbook-button:focus:hover,
+.gitbook-button:not(:disabled):not(.disabled):active {
+    background-color: #0e2344; 
+    border-color: #0e2344;
+}
+
+.discource-button {
+    background-color: #fff9ae; 
+    border-color: #fff9ae;
+    color:black
+}
+.discource-button:hover,.discource-button:focus:hover,
+.discource-button:not(:disabled):not(.disabled):active {
+    background-color: #d8d27b; 
+    border-color: #d8d27b;
+    color: black;
+}
+
+.github-button {
+    background-color: black; 
+    border-color: black;
+    color:white
+}
+.github-button:hover,.github-button:focus:hover,
+.github-button:not(:disabled):not(.disabled):active {
+    background-color: #d6d6d6; 
+    border-color: #d6d6d6;
+    color: black;
+}
+
 @media (min-width: 992px) {
 
     #docker-pulls div.pull-stat-number {
