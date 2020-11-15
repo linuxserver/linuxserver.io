@@ -2,7 +2,7 @@
 <html>
     <head>
 
-        <title>LinuxServer</title>
+        <title>Support - LinuxServer</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=eEv90663g4" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=eEv90663g4" />
@@ -20,7 +20,7 @@
     </head>
     <body>
 
-        <div class="container-fluid container-preface container--background-image">
+        <div class="container-fluid container-support container--background-image">
             <div class="darken-bg">
 
                 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -31,7 +31,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -43,7 +43,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" target="_blank" href="https://docs.linuxserver.io">Documentation</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" target="_blank" href="support">Support</a>
                             </li>
                             <li class="nav-item">
@@ -56,13 +56,12 @@
                     </div>
                 </nav>
 
-                <div class="container preface d-flex align-items-center">
+                <div class="container support d-flex align-items-center">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="text-center">Building and maintaining community images</h1>
+                            <h1 class="text-center">Support</h1>
                             <p>
-                                We are a group of like minded enthusiasts from across the world who build and maintain the largest collection of Docker
-                                images on the web, and at our core are the principles behind Free and Open Source Software. Our primary goal is to provide easy-to-use and streamlined Docker images with clear and concise documentation.
+                                We have support! This paragraph needs work!
                             </p>
                         </div>
                     </div>
@@ -73,78 +72,15 @@
         <div class="container container-home d-flex align-items-center">
             <div class="row row--tall">
                 <div class="col-md-12 text-center">
-                    <h2>A worldwide user-base</h2>
-                    <p>
-                        Our commitment is to the community and our users. Over the years, we have worked hard to build a name that resonates with home server enthusiasts and newcomers. Our images are for everyone, and always will be.
-                        We would like to thank everyone who has used our images, and helped us achieve such a milestone.
-                    </p>
-                    <br />
-                </div>
-                <div class="col-md-12 text-center">
-                    <h5>Image Pulls</h5>
-                    <div id="docker-pulls"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid container-standard-images container--background-image">
-            <div class="darken-bg--darker">
-                <div class="container standard-images d-flex align-items-center">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2>Standardised Images</h2>
-                            <p>
-                                Our images are built from the same base, which we have uniquely curated.
-                                By using <code><a href="https://github.com/just-containers/s6-overlay" target="_blank">s6-overlay</a></code>, each of our base images are highly extendable, making them configurable for practically any application.
-                                This standardisation not only provides uniformity; it also saves our users bandwidth and storage by having each of our images share their base layers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-home">
-            <div class="row row--tall">
-                <div class="col-md-12 text-center">
-                    <h2>Regular Updates</h2>
-                    <p>
-                        Our build pipeline has been completely redesigned and now provides our users with fast and effective updates for our images.
-                        When the upstream applications, or application dependencies are updated, our images will automatically rebuild.
-                        This mechanism ensures our images remain as up-to-date as possible. Our new tagging system also provides users with clearer indications as to which application version a particular build encapsulates.
+                    <h2>Where to get support</h2>
+                    <p class="mt-5">
+                        <a href="https://docs.linuxserver.io" target="_blank"><img src="img/GitBook-Logo.png" title="Documentation - information about all of our containers." alt="GitBook Logo" class="support-logo" /></a>
+                        <a href="https://discord.gg/YWrKVTn" target="_blank"><img src="img/Discord-Logo.png" title="Discord - realtime support / chat with the community and the team." alt="Discord Logo" class="support-logo" /></a>
+                        <a href="https://discourse.linuxserver.io/" target="_blank"><img src="img/Discourse-Logo.png" title="Discourse - post on our community forum." alt="Discourse Logo" class="support-logo" /></a>
+                        <a href="https://github.com/linuxserver" target="_blank"><img src="img/GitHub-Logo.png" title="GitHub - view the source for all of our repositories." alt="GitHub Logo" class="support-logo" /></a>
                     </p>
                 </div>
             </div>
-        </div>
-
-        <div class="container-fluid container-documentation container--background-image">
-            <div class="darken-bg--darker">
-                <div class="container documentation d-flex align-items-center">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2>First-class Documentation</h2>
-                            <p>
-                                It is our belief that with a first-class fleet of images comes a first-class set of documentation. All of our images
-                                come with clear and thorough set-up guides. These can be found either on <a href="https://github.com/linuxserver" target="_blank">GitHub</a> or our dedicated <a href="https://docs.linuxserver.io" target="_blank">Documentation</a> space.
-                                Further guides and opinion pieces can also also be found on our blog.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-home">
-            <div class="row row--tall">
-                <div class="col-md-12 text-center">
-                    <h2>Support</h2>
-                    <p>
-                        Our community is ever expanding, and as such requires the best possible support when using our images.
-                        We provide first-hand support via our <a href="https://discord.gg/YWrKVTn" target="_blank">Discord server</a>, as well as our <a href="https://discourse.linuxserver.io/" target="_blank">Discourse forum</a>. Whether new to LinuxServer, or a returning veteran, there will always be someone available from the team, or the community itself to help you through any issues.
-                    </p>
-                </div>
-            </div>
-
         </div>
 
         <footer class="page-footer">
@@ -191,9 +127,5 @@
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/lsio.js"></script>
-
-        <script type="text/javascript">
-            pullManager.init();
-        </script>
     </body>
 </html>

@@ -3,12 +3,12 @@ body {
 }
 
 .navbar-brand {
-    font-family:'Montserrat', sans-serif; 
+    font-family:'Montserrat', sans-serif;
     font-size: 1rem;
 }
 
 h1, h2, h3 {
-    font-family:'Montserrat', sans-serif; 
+    font-family:'Montserrat', sans-serif;
 }
 
 h1 {
@@ -91,7 +91,7 @@ h1 ~ p, h2 ~ p {
 }
 
 #docker-pulls div.pull-stat-number {
-    
+
     background-color: #20232a;
     border-radius: 5px;
     color: #fff;
@@ -108,7 +108,7 @@ h1 ~ p, h2 ~ p {
 }
 
 #image-list .col .docker-image-detail {
-    
+
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
     background-color: #ffffff;
@@ -139,6 +139,10 @@ h1 ~ p, h2 ~ p {
     background-image: url(../img/rsz_wil-stewart-24562-unsplash.jpg);
 }
 
+.container-support {
+    background-image: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+}
+
 .container--background-image {
     background-position: 50%;
     background-repeat: no-repeat;
@@ -156,7 +160,7 @@ h1 ~ p, h2 ~ p {
     background-color: rgba(0,0,0,0.6);
 }
 
-.preface, .donations {
+.preface, .donations, .support {
     height: calc(95vh - 58px);
 }
 
@@ -211,6 +215,10 @@ h1 ~ p, h2 ~ p {
 }
 
 .supporter-logo {
+    margin: 0 20px;
+}
+
+.support-logo {
     margin: 0 20px;
 }
 
